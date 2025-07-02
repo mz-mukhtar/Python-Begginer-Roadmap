@@ -115,6 +115,9 @@ is_student = True
 print(type(age))        # <class 'int'>
 print(type(name))       # <class 'str'>
 ```
+
+---
+
 ## ➕ 6. Arithmetic Operators
 
 Python can act like a calculator:
@@ -135,4 +138,115 @@ a = 10
 b = 3
 print("Addition:", a + b)
 print("Modulo:", a % b)
+```
+
+---
+
+## 💬 7. Comments and Indentation
+### Comments
+
+Use # to leave notes for yourself (not executed).
+
+# This is a comment
+```
+print("Hello!")  # This prints text
+```
+### Indentation
+
+Python uses indentation (spaces/tabs) to group blocks of code.
+
+Correct:
+```
+if 5 > 3:
+    print("5 is greater")
+```
+Incorrect (no indentation!):
+```
+if 5 > 3:
+print("5 is greater")  # Will cause error
+```
+
+---
+
+## 🧪 8. Practice Tasks
+
+Try these on your own:
+
+ - Age in 10 Years:
+```
+age = int(input("How old are you? "))
+future = age + 10
+print("In 10 years, you'll be", future)
+```
+- Area of a Rectangle:
+```
+length = float(input("Enter length: "))
+width = float(input("Enter width: "))
+area = length * width
+print("Area =", area)
+```
+- Check Even or Odd:
+```
+number = int(input("Enter a number: "))
+if number % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
+```
+
+---
+## 🧰 9. Final Mini Project: Build a Simple Calculator
+
+Let’s combine everything into your first real-world Python app: a calculator.
+🔧 Calculator Requirements:
+
+- Takes 2 numbers from the user
+- Takes an operation: +, -, *, /
+- Performs the operation and displays result
+
+🧑‍💻 Code:
+```
+print("Welcome to the Python Calculator!")
+
+num1 = float(input("Enter first number: "))
+op = input("Enter an operation (+ - * /): ")
+num2 = float(input("Enter second number: "))
+
+if op == "+":
+    result = num1 + num2
+elif op == "-":
+    result = num1 - num2
+elif op == "*":
+    result = num1 * num2
+elif op == "/":
+    if num2 != 0:
+        result = num1 / num2
+    else:
+        result = "Error: Cannot divide by zero"
+else:
+    result = "Invalid operation!"
+
+print("Result:", result)
+```
+✅ Sample Output:
+```
+Enter first number: 10
+Enter an operation (+ - * /): *
+Enter second number: 5
+Result: 50.0
+```
+----
+
+### 🧠 Homework
+ Build your own version of the calculator that:
+ - Shows a welcome message
+ - Asks for 2 numbers and an operation
+ - Handles invalid inputs (optional)
+ - Looks clean and friendly
+
+### Bonus challenge:
+
+Create a program that asks your name and age, and prints:
+```
+"Hello Mahi, you are 22 years old. In 10 years, you will be 32!"
 ```
