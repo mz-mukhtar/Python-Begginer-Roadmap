@@ -164,7 +164,7 @@ Have a suggestion or want to improve the roadmap?
 
 ## 🧑‍🏫 Maintained By
 
-This roadmap is created and maintained by [Mahi Zeki](mailto:mahizeki037@gmail.com), co-founder of **EthioNext** and educator at **Cyber Vanguard** Club (AAiT).
+This roadmap is created and maintained by [Mahi Zeki](mailto:mahizmukhtar@gmail.com), co-founder of **EthioNext** and educator at **Cyber Vanguard** Club (AAiT).
 
 > “Empowering students to learn by doing — one project at a time.”  
 — Mahi Zeki
