@@ -31,3 +31,108 @@ Python is a powerful, easy-to-learn programming language used for:
 Example of Python:
 ```python
 print("Hello, world!")
+```
+
+---
+
+## 🛠️ 2. Installing Python
+✅ Step-by-Step:
+
+### Download Python:
+
+-  Visit: https://www.python.org/downloads/
+
+- Click the “Download Python 3.x” button
+
+###  Install Python:
+
+- On Windows, make sure to check the box: ✅ Add Python to PATH
+
+  - Click “Install Now”
+
+- Open Your Code Editor:
+
+  - We recommend Visual Studio Code
+
+- Or use online tools like Replit if you don’t want to install anything
+
+### Check Installation:
+
+- Open a terminal (or command prompt) and type:
+```
+python --version
+```
+
+---
+
+## 📤 3. Your First Python Program
+
+Let’s write the classic Hello, World! program.
+```
+print("Hello, Python!")
+```
+✅ Output:
+```
+Hello, Python!
+```
+- print() is used to display something on the screen.
+
+---
+
+## 🎮 4. Taking User Input with input()
+
+Let’s ask the user for their name and greet them:
+```
+name = input("What is your name? ")
+print("Nice to meet you, " + name + "!")
+```
+⚡ Breakdown:
+
+- input() pauses and waits for the user to type
+- It always returns a string (text)
+- You can store it in a variable
+
+---
+
+## 🧠 5. Variables and Data Types
+
+Variables store values. Think of them like containers.
+```
+age = 17
+height = 1.75
+name = "Amina"
+is_student = True
+```
+  | Type     |   Example	   |     Type   |
+  |----------|---------------|------------| 
+  | Integer	 |  17	         |      int   |
+  | Float	   |  1.75	       |      float |
+  | String   |  "Amina"	     |      str   |
+  | Boolean	 |  True/False	 |      bool  |
+
+🔎 You can check a variable’s type using:
+```
+print(type(age))        # <class 'int'>
+print(type(name))       # <class 'str'>
+```
+## ➕ 6. Arithmetic Operators
+
+Python can act like a calculator:
+
+|  Symbol	 |    Name	       |  Example	|   Result |
+|----------|-----------------|----------|----------|
+|    +	   |     Addition	   |  5 + 3	  |   8
+|    -	   |    Subtraction	 |  7 - 2	  |   5
+|    *	   | Multiplication	 |  4 * 6	  |   24
+|    /	   |    Division	   |  10 / 2	|     5.0
+|    //	   |   Floor Division|	10 // 3	|   3
+|    %	   |     Modulus	   |  10 % 3	|     1
+|    **	   |   Exponent	     |  2 ** 3	|     8
+
+✅ Example:
+```
+a = 10
+b = 3
+print("Addition:", a + b)
+print("Modulo:", a % b)
+```
