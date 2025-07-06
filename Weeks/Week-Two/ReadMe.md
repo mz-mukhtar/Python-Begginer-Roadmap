@@ -1,37 +1,38 @@
 # 📘 Week 2 Overview: Loops and Lists
 
-In Week 2, we dive deeper into core programming skills by introducing **loops** (for repetition) and **lists** (for storing multiple values). These two concepts make your programs more flexible and powerful.
+In Week 2, you’ll explore **repetition and data collection** in Python. You’ll learn how to repeat tasks using loops and store multiple values using lists. These tools are essential for building scalable, reusable programs.
 
 ---
 
-## 🧑‍💻 Session 1: Repetition with `while` and `for` Loops
+## 🔁 Session 1: Loops (for & while)
 
-### ✅ What You’ll Learn:
-- `while` loops for repeating actions until a condition is false
-- `for` loops with `range()` for counting
+### ✅ Key Concepts:
+- `while` loops for repeating tasks until a condition is false
+- `for` loops using `range()`
 - Loop control with `break` and `continue`
-- Writing interactive programs that repeat
-- Practical projects like sum calculators and guessing games
+- Real-world examples like countdowns and number sequences
 
-### 🛠️ Mini Projects:
-- Countdown timer
-- Sum of numbers from 1 to N
-- Number guessing game (with 3 attempts)
+### 🛠️ Mini Project:
+- **Login System with Retry Loop**: Allows 3 login attempts using `while`
 
 ---
 
-## 📦 Session 2: Working with Lists
+## 🧺 Session 2: Lists and Data Handling
 
-### ✅ What You’ll Learn:
-- Creating and modifying lists
-- Accessing elements by index
-- Looping through lists with `for`
-- Using list methods: `append()`, `remove()`, `sort()`, etc.
-- Building dynamic programs that store and display data
+### ✅ Key Concepts:
+- Creating and accessing Python lists
+- Looping through lists using `for` and `while`
+- Adding (`append()`), removing (`remove()`, `pop()`) items
+- Finding list length and checking for membership
 
-### 🚀 Mini Projects:
-- Student Name Collector
-- Shopping List Menu System
-- Highest and Lowest from 10 inputs
+### 🚀 Mini Project:
+- **Student Collector App**: Asks how many students to enter, stores names in a list, and displays the full list
 
 ---
+
+By the end of Week 2, you will be able to:
+- Repeat and automate tasks using loops
+- Store and manipulate groups of values using lists
+- Build interactive programs like login systems and data collectors
+
+👉 Ready for [Week 3 →](../week3/README.md)? We’ll dive into **functions** and how to write reusable, organized code!
