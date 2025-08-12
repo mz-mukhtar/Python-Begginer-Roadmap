@@ -164,6 +164,74 @@ else:
 
 ---
 
+## 🌍 8. Scope: Local vs Global
+What is Scope?
+
+Scope refers to the part of a program where a variable is recognized and can be used.
+
+Two main types:
+
+1. Local Scope – variables created inside a function, only accessible there.
+
+2. Global Scope – variables created outside functions, accessible anywhere.
+
+Local Scope Example
+```
+def greet():
+    message = "Hello from local scope"
+    print(message)
+
+greet()
+# print(message)  # ❌ Error: message not defined here
+```
+Global Scope Example
+```
+message = "Hello from global scope"
+
+def greet():
+    print(message)
+
+greet()
+print(message)  # Works fine
+```
+Modifying Globals with global
+
+If you want to change a global variable inside a function:
+```
+counter = 0
+
+def increment():
+    global counter
+    counter = counter + 1
+    print(counter)
+
+increment()
+increment()
+```
+Why Not Always Use Globals?
+
+- Harder to debug
+
+- Functions become less reusable
+
+- Higher risk of accidental changes
+
+💡 Best Practice: Pass variables as function parameters instead of relying on globals.
+
+### Practice
+
+ -  Create a global variable name = "Python".
+
+ -  Make a function that prints it.
+
+ -  Make another that changes it to "Java" using global.
+
+ -  Print name before and after both functions.
+
+
+
+---
+
 ## 🧠 Homework
 📌 Task 1: Create a function that returns the average of a list of numbers
 ```
