@@ -141,7 +141,7 @@ for student_id, info in students.items():
 
 ## 7. Big Project Part 3: Store Structured Data Using Dictionaries
 
-Now, let’s build on our Student Management System Project.
+Now, let’s build on our To-Do List Manager Project.
 So far:
 
 - Part 1: We used variables/lists.
@@ -149,6 +149,7 @@ So far:
 - Part 2: We introduced functions.
 
 Now in Part 3, we’ll use dictionaries to make the system structured and scalable.
+
 
 
 
