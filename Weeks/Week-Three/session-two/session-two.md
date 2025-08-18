@@ -112,7 +112,7 @@ A nested dictionary means a dictionary inside another dictionary. This is useful
 Example: Storing students’ information
 ```
 students = {
-    "student1": {"name": "Mahi", "age": 21, "major": "CS"},
+    "student1": {"name": "Mahi", "age": 22, "major": "EE"},
     "student2": {"name": "Sara", "age": 22, "major": "IT"},
     "student3": {"name": "Jon", "age": 20, "major": "EE"}
 }
@@ -149,6 +149,7 @@ So far:
 - Part 2: We introduced functions.
 
 Now in Part 3, we’ll use dictionaries to make the system structured and scalable.
+
 
 
 
