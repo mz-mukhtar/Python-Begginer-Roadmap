@@ -23,7 +23,7 @@ Example:
 student = {
     "name": "Mahi",
     "age": 21,
-    "major": "Computer Science"
+    "major": "Electrical Engineer"
 }
 
 print(student["name"])  # Output: Mahi
@@ -149,6 +149,7 @@ So far:
 - Part 2: We introduced functions.
 
 Now in Part 3, we’ll use dictionaries to make the system structured and scalable.
+
 
 
 
