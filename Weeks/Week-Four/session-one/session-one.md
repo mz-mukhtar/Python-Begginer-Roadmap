@@ -61,7 +61,7 @@ print(csv_format)
 
 3. Splits it into words.
 
-4. Joins them back with a -.
+4. Joins them back with a `-`.
 
 ---
 
@@ -183,18 +183,18 @@ text_analyzer()
 
    1. Ask the user for their full name and print:
 
-       -- All lowercase
+       - All lowercase
 
-       -- All uppercase
+       - All uppercase
 
-       -- Initials (first letters of each word)
+       - Initials (first letters of each word)
 
    2. Write a program that reverses a sentence entered by the user.
 
    3. Extend the text analyzer project:
 
-       -- Count how many times each word appears.
+       - Count how many times each word appears.
 
-       -- Print the longest word in the sentence.
+       - Print the longest word in the sentence.
 
         Print the average word length.
