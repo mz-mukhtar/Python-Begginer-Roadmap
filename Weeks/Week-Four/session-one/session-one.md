@@ -16,19 +16,19 @@ Converts all characters in a string to **lowercase**.
 text = "Python is AWESOME!"
 print(text.lower())
 # Output: python is awesome!
-
-upper()
+```
+### upper()
 
 Converts all characters in a string to uppercase.
-
+```
 text = "Python is fun!"
 print(text.upper())
 # Output: PYTHON IS FUN!
-
-split()
+```
+### split()
 
 Splits a string into a list of words (or pieces) based on a separator (default: space).
-
+```
 sentence = "I love learning Python"
 words = sentence.split()
 print(words)
@@ -39,11 +39,11 @@ data = "apple,banana,grape"
 fruits = data.split(",")
 print(fruits)
 # Output: ['apple', 'banana', 'grape']
-
-join()
+```
+### join()
 
 Takes a list of strings and joins them back together with a chosen separator.
-
+```
 words = ['I', 'love', 'Python']
 sentence = " ".join(words)
 print(sentence)
@@ -52,79 +52,87 @@ print(sentence)
 csv_format = ",".join(words)
 print(csv_format)
 # Output: I,love,Python
-
+```
 ✅ Practice: Write a Python program that:
 
-    Takes a sentence as input.
+1. Takes a sentence as input.
 
-    Converts it to lowercase.
+2. Converts it to lowercase.
 
-    Splits it into words.
+3. Splits it into words.
 
-    Joins them back with a -.
+4. Joins them back with a -.
 
-2. Indexing and Slicing Strings
-Indexing
+---
+
+## 2. Indexing and Slicing Strings
+### Indexing
 
 Each character in a string has a position (index). Indexing starts at 0.
-
+```
 word = "Python"
 print(word[0])   # Output: P
 print(word[3])   # Output: h
 print(word[-1])  # Output: n (last character)
-
-Slicing
+```
+### Slicing
 
 You can extract a portion (substring) using [start:end].
-
+```
 word = "Python"
 print(word[0:4])   # Output: Pyth (characters 0–3)
 print(word[2:])    # Output: thon (from index 2 to end)
 print(word[:3])    # Output: Pyt (from start to index 2)
 print(word[-3:])   # Output: hon (last 3 characters)
-
+```
 ✅ Practice: Write a program that:
 
-    Prints the first 3 characters of "Programming".
+- Prints the first 3 characters of "Programming".
 
-    Prints the last 4 characters of "Programming".
+- Prints the last 4 characters of "Programming".
 
-    Prints characters 2–6 of "Programming".
+- Prints characters 2–6 of "Programming".
 
-3. Formatting with f-Strings
+---
+
+## 3. Formatting with f-Strings
 
 f-strings allow you to embed variables directly inside strings (introduced in Python 3.6+).
-
+```
 name = "Mahi"
-age = 21
+age = 22
 print(f"My name is {name} and I am {age} years old.")
 # Output: My name is Mahi and I am 21 years old.
-
+```
 You can also do calculations inside f-strings:
-
+```
 a = 5
 b = 3
 print(f"{a} + {b} = {a + b}")
 # Output: 5 + 3 = 8
-
+```
 ✅ Practice: Write a program that asks for the user’s name and age, then prints:
-Hello [name], next year you will be [age+1] years old.
-4. Mini-Project: Text Analysis
+`Hello [name], next year you will be [age+1] years old.`
+
+---
+
+## 4. Mini-Project: Text Analysis
+
 
 We’ll build a small Text Analyzer that does the following:
 
-    Counts how many words are in a sentence.
+1. Counts how many words are in a sentence.
 
-    Checks if a word is a palindrome (reads the same forwards and backwards).
+2. Checks if a word is a palindrome (reads the same forwards and backwards).
 
-Step 1: Word Count
-
+### Step 1: Word Count
+```
 text = input("Enter a sentence: ")
 words = text.split()
 print(f"Your sentence has {len(words)} words.")
-
-Step 2: Palindrome Checker
-
+```
+### Step 2: Palindrome Checker
+```
 word = input("Enter a word to check if it is a palindrome: ")
 
 # Normalize (ignore case)
@@ -134,9 +142,9 @@ if word == word[::-1]:
     print(f"'{word}' is a palindrome!")
 else:
     print(f"'{word}' is NOT a palindrome.")
-
-Step 3: Combine Everything – Text Analyzer
-
+```
+### Step 3: Combine Everything – Text Analyzer
+```
 def text_analyzer():
     text = input("Enter a sentence: ")
     words = text.split()
@@ -153,35 +161,40 @@ def text_analyzer():
 
 # Run the analyzer
 text_analyzer()
+```
 
-5. Summary
+---
 
-    lower() and upper() change string case.
+## 5. Summary
 
-    split() and join() are used for breaking apart and combining text.
+- lower() and upper() change string case.
 
-    Indexing and slicing help extract parts of strings.
+- split() and join() are used for breaking apart and combining text.
 
-    f-strings make formatting simple and powerful.
+- Indexing and slicing help extract parts of strings.
 
-    Mini-project: we built a text analyzer to count words and find palindromes.
+- f-strings make formatting simple and powerful.
 
-🎯 Homework / Practice Tasks
+- Mini-project: we built a text analyzer to count words and find palindromes.
 
-    Ask the user for their full name and print:
+---
 
-        All lowercase
+## 🎯 Homework / Practice Tasks
 
-        All uppercase
+   1. Ask the user for their full name and print:
 
-        Initials (first letters of each word)
+       -- All lowercase
 
-    Write a program that reverses a sentence entered by the user.
+       -- All uppercase
 
-    Extend the text analyzer project:
+       -- Initials (first letters of each word)
 
-        Count how many times each word appears.
+   2. Write a program that reverses a sentence entered by the user.
 
-        Print the longest word in the sentence.
+   3. Extend the text analyzer project:
+
+       -- Count how many times each word appears.
+
+       -- Print the longest word in the sentence.
 
         Print the average word length.
