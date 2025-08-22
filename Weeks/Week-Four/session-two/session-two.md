@@ -228,7 +228,7 @@ while True:
 
 ---
 
-##📝 Mini Practice Exercises
+## 📝 Mini Practice Exercises
 
   - Create a program that writes 5 favorite movies into a file and then reads them back.
 
