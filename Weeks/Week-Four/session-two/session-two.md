@@ -1,69 +1,77 @@
-Session 8 – File Handling in Python
+# Session 8 – File Handling in Python
 
-In this session, we’ll learn how to read and write files in Python.
-File handling allows us to save data permanently (so it doesn’t disappear when the program stops running).
-This is essential for real-world applications like to-do lists, note apps, and user data storage.
+In this session, we’ll learn how to **read and write files** in Python.  
+File handling allows us to **save data permanently** (so it doesn’t disappear when the program stops running).  
+This is essential for real-world applications like **to-do lists, note apps, and user data storage**.
 
-1. Opening Files
+---
 
-Python provides the built-in open() function to work with files.
+## 1. Opening Files
 
-Syntax:
+Python provides the built-in `open()` function to work with files.
 
-file = open("filename.txt", "mode")
+### Syntax:
+```python
+file = open("filename", "mode")
+```
+- "filename" → The name of the file (e.g., "data.txt").
 
-    "filename.txt" → the file name (or path).
+- "mode" → How we want to use the file:
 
-    "mode" → how we want to open the file.
+  - "r" → Read (default mode, error if file doesn’t exist).
 
-Common Modes:
+  - "w" → Write (creates a new file or overwrites existing one).
 
-    "r" → read (default)
+  - "a" → Append (adds data to the file without deleting existing content).
 
-    "w" → write (creates a new file or overwrites existing)
-
-    "a" → append (adds data to the end of the file)
-
-    "r+" → read and write
+  - "b" → Binary mode (for images, videos, etc.).
 
 Example:
-
-file = open("notes.txt", "w")
+```
+file = open("example.txt", "w")
 file.write("Hello, world!")
 file.close()
+```
 
-2. Writing to a File
+---
 
-# Create a file and write text
-file = open("todo.txt", "w")  
-file.write("Buy milk\n")
-file.write("Complete Python homework\n")
+## 2. Writing to a File
+You can use .write() to save text into a file.
+
+### Example:
+```
+file = open("notes.txt", "w")
+file.write("This is my first note.\n")
+file.write("Python makes file handling easy!\n")
 file.close()
+```
+✔ This creates a file called notes.txt and writes two lines into it.
+✔ If the file already exists, it will overwrite it.
 
-    \n → creates a new line.
+---
 
-    If the file already exists, "w" overwrites it.
+## 3. Reading from a File
+To read data, we use .read(), .readline(), or .readlines().
 
-3. Reading from a File
-
-file = open("todo.txt", "r")
+### Example: 
+Read the entire file
+```
+file = open("notes.txt", "r")
 content = file.read()
 print(content)
 file.close()
-
-Output:
-
-Buy milk
-Complete Python homework
-
+```
 Read Line by Line
-
+```
 file = open("todo.txt", "r")
 for line in file:
     print(line.strip())   # strip() removes \n
 file.close()
+```
 
-4. Appending to a File
+---
+
+## 4. Appending to a File
 
 file = open("todo.txt", "a")
 file.write("Go for a walk\n")
