@@ -72,126 +72,166 @@ file.close()
 ---
 
 ## 4. Appending to a File
+Appending does not remove existing content.
 
-file = open("todo.txt", "a")
-file.write("Go for a walk\n")
+### Example:
+```
+file = open("notes.txt", "a")
+file.write("This is an extra line.\n")
 file.close()
+```
+✔ Now `notes.txt` keeps the old content plus the new line.
 
-Now the file keeps the old data and adds the new one.
-5. Using with Statement
+---
 
+## 5. Using `with` Statement
 Python provides a safe way to handle files using with.
-This automatically closes the file, even if errors happen.
+The `with` statement automatically closes the file after use.
+This is the recommended way to work with files.
 
-with open("todo.txt", "r") as file:
+### Example:
+```
+with open("notes.txt", "r") as file:
     content = file.read()
     print(content)
+```
+✔ No need to call `file.close()`.
+✔ It ensures safety if the program crashes.6. Writing Structured Data
 
-No need to call file.close() manually!
-6. Writing Structured Data
+---
 
+## 6. Reading and Writing Structured Data
 Instead of plain text, sometimes we need structured data like lists and dictionaries.
-Python has the json module for this.
-Example: Save To-Do List as JSON
+We can use simple text storage or modules like json.
 
+### Example: Save To-Do List as JSON
+```
 import json
 
-todos = ["Buy milk", "Complete Python homework", "Go for a walk"]
+tasks = ["Buy milk", "Finish homework", "Go jogging"]
 
-with open("todo.json", "w") as file:
-    json.dump(todos, file)   # saves list to file
+# --- Plain text approach ---
+with open("tasks.txt", "w") as file:
+    for task in tasks:
+        file.write(task + "\n")   # write each task on a new line
+print("Tasks saved to tasks.txt")
 
-7. Reading Structured Data
 
+# --- JSON approach ---
+with open("tasks.json", "w") as file:
+    json.dump(tasks, file)   # save the whole list as JSON
+print("Tasks saved to tasks.json")
+
+
+```
+### Example: How to Read it Back?
+Saving is just one part. To use the data later, we read it back:
+```
 import json
 
+# --- Plain text approach ---
+with open("tasks.txt", "r") as file:
+    tasks_text = file.read().splitlines()
+
+print("From plain text:", tasks_text)
+
+
+# --- JSON approach ---
 with open("todo.json", "r") as file:
-    todos = json.load(file)
+    tasks_json = json.load(file)
 
-print(todos)
+print("From JSON:", tasks_json)
 
-Output:
 
-['Buy milk', 'Complete Python homework', 'Go for a walk']
+```
 
-8. Updating the To-Do List App (Big Project Part 4)
+---
 
-Now we’ll extend our To-Do List App to save tasks to a file and load them back.
-Code Example:
+## 7. Big Project Part 4 – Save & Load To-Do List App Data
+Let’s upgrade our To-Do List App to store tasks permanently in a file.
 
-import json
-
-FILENAME = "todos.json"
-
-# Load existing tasks
-def load_tasks():
+### Step 1: Save tasks to a file
+```
+def save_tasks(tasks, filename="todo.txt"):
+    with open(filename, "w") as file:
+        for task in tasks:
+            file.write(task + "\n")
+```
+### Step 2: Load tasks from a file
+```
+def load_tasks(filename="todo.txt"):
     try:
-        with open(FILENAME, "r") as file:
-            return json.load(file)
+        with open(filename, "r") as file:
+            return file.read().splitlines()
     except FileNotFoundError:
-        return []  # return empty list if file doesn't exist
+        return []   # return empty list if file doesn’t exist
 
-# Save tasks
-def save_tasks(tasks):
-    with open(FILENAME, "w") as file:
-        json.dump(tasks, file)
+```
+### Step 3: Full Example
+```
+def save_tasks(tasks, filename="todo.txt"):
+    with open(filename, "w") as file:
+        for task in tasks:
+            file.write(task + "\n")
 
-# Add a new task
-def add_task(tasks, task):
-    tasks.append(task)
-    save_tasks(tasks)
-    print(f"Added: {task}")
-
-# Show all tasks
-def show_tasks(tasks):
-    if not tasks:
-        print("No tasks yet!")
-    else:
-        for i, task in enumerate(tasks, start=1):
-            print(f"{i}. {task}")
+def load_tasks(filename="todo.txt"):
+    try:
+        with open(filename, "r") as file:
+            return file.read().splitlines()
+    except FileNotFoundError:
+        return []
 
 # Main program
-def main():
-    tasks = load_tasks()
+tasks = load_tasks()
 
-    while True:
-        print("\nTo-Do List")
-        print("1. Add task")
-        print("2. Show tasks")
-        print("3. Exit")
+while True:
+    print("\nYour To-Do List:")
+    for i, task in enumerate(tasks, 1):
+        print(f"{i}. {task}")
 
-        choice = input("Choose an option: ")
+    choice = input("\nOptions: [a]dd, [d]elete, [q]uit → ")
 
-        if choice == "1":
-            task = input("Enter task: ")
-            add_task(tasks, task)
-        elif choice == "2":
-            show_tasks(tasks)
-        elif choice == "3":
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice!")
+    if choice == "a":
+        new_task = input("Enter new task: ")
+        tasks.append(new_task)
+        save_tasks(tasks)
 
-if __name__ == "__main__":
-    main()
+    elif choice == "d":
+        task_num = int(input("Enter task number to delete: "))
+        if 1 <= task_num <= len(tasks):
+            tasks.pop(task_num - 1)
+            save_tasks(tasks)
 
-🔑 Key Takeaways
+    elif choice == "q":
+        print("Goodbye! Your tasks are saved.")
+        break
 
-    Use open(filename, mode) to work with files.
+```
+✔ Now the To-Do List App saves and loads tasks even after the program is closed.
+✔ This makes it more like a real application.
 
-    Always close files (or use with).
+---
 
-    "w" overwrites, "a" appends, "r" reads.
+## ✅ Summary
 
-    Use the json module for structured data.
+- `open("file.txt", "mode")` → Open a file with read/write/append mode.
 
-    Saving data makes programs persistent across runs.
+- `.write()` → Save text into a file.
 
-📝 Mini Practice Exercises
+- `.read()` / `.readline()` / `.readlines()` → Read data.
 
-    Create a program that writes 5 favorite movies into a file and then reads them back.
+- `with open(...)` → Safest way to handle files.
 
-    Modify the To-Do app so you can delete a task and save changes to the file.
+- We can store structured data like lists using simple text format.
 
-    Build a "Notes App" that allows adding, viewing, and saving text notes to a file.
+- Our To-Do List App now saves and loads tasks from a file.
+
+---
+
+##📝 Mini Practice Exercises
+
+  - Create a program that writes 5 favorite movies into a file and then reads them back.
+
+  - Modify the To-Do app so you can delete a task and save changes to the file.
+
+  - Build a "Notes App" that allows adding, viewing, and saving text notes to a file.
