@@ -134,25 +134,11 @@ while attempts > 0:
 if attempts == 0:
     print("Account locked.")
 ```
-### 🧠 Homework Tasks
-#### Task 1: Print the multiplication table of a number
+## 🧠 Homework Tasks
+### Task 1: Print the multiplication table of a number
 
 Input a number and print its table from 1 to 10
-```
-num = int(input("Enter a number: "))
-for i in range(1, 11):
-    print(num, "x", i, "=", num * i)
-```
-#### Task 2: Password Retry
+
+### Task 2: Password Retry
 
   Ask for a password using a loop. Give unlimited attempts until the user types the correct password.
-```
-correct = "python123"
-while True:
-    guess = input("Enter password: ")
-    if guess == correct:
-        print("Welcome!")
-        break
-    else:
-        print("Try again.")
-```
