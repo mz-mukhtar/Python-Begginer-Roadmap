@@ -157,14 +157,3 @@ Student List:
 - Collect all the scores in a list
 
 - Print the average score
-```
-scores = []
-n = int(input("How many scores? "))
-
-for i in range(n):
-    score = float(input(f"Enter score {i + 1}: "))
-    scores.append(score)
-
-avg = sum(scores) / len(scores)
-print("Average score:", avg)
-```
