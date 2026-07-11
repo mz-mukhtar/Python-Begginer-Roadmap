@@ -1,178 +1,276 @@
-# 🐍 Python Beginner Roadmap
+# 🐍 Python Beginner to Practical Developer Roadmap
 
-Welcome to the **Python Beginner Roadmap** — a practical and project-based curriculum designed to take **absolute beginners** to an **intermediate level in Python** in just **6 weeks**.
+Welcome to the **Python Beginner to Practical Developer Roadmap** — a comprehensive, practical, and project-based curriculum designed to take **absolute beginners** from Python fundamentals into **practical developer project mastery** over **8 weeks**.
 
 This roadmap is ideal for:
 - High school students
 - Self-taught learners
 - Bootcamp participants
-- Anyone looking for a structured path to learn Python fast
+- Anyone looking for a structured, hands-on path to learn Python and modern developer practices
 
-With **two 4-hour sessions per week**, learners will build real-world projects while mastering Python fundamentals and Object-Oriented Programming (OOP).
-
----
-
-## 🧠 Why Learn Python?
-
-Python is one of the most popular, beginner-friendly, and versatile programming languages in the world. It powers everything from simple scripts to advanced artificial intelligence and web applications.
+With **3 guided sessions per week (3 hours each)**, learners will complete **72 hours** of structured guided learning—building real-world applications, working with persistent data, debugging, mastering Object-Oriented Programming (OOP), managing packages, using Git/GitHub, interacting with APIs, and delivering a capstone final project.
 
 ---
 
-## 📜 A Brief History of Python
+## 📌 About the Course
 
-Python was created in the late 1980s by **Guido van Rossum** and released in 1991. It was designed to emphasize **code readability**, **simplicity**, and **productivity**. The name Python was inspired by the British comedy series **Monty Python’s Flying Circus**, not the snake!
+The **Python Beginner to Practical Developer Roadmap** gradually transitions learners from simple scripting to professional software engineering practices. Every week is structured to balance core conceptual theory with guided application and project building.
 
-Python's popularity skyrocketed due to:
-- Clean, readable syntax
-- Massive community support
-- Versatile libraries (for AI, web dev, data science, etc.)
-- Use in major companies like Google, Netflix, and NASA
+### ⏱️ Course Duration & Structure
+- **Duration**: 8 Weeks
+- **Sessions Per Week**: 3 Sessions
+- **Total Sessions**: 24 Sessions
+- **Recommended Session Duration**: 3 Hours
+- **Estimated Guided Learning Time**: 72 Hours
 
----
-
-## 🗓️ 6-Week Python Learning Plan (2 Sessions/Week, 4 Hours Each)
-
-Each session includes theory, hands-on coding, and incremental progress on a major project.
-
-### ✅ Week 1: Python Basics + First Project
-
-#### Session 1
-- What is Python?
-- Installing Python & VS Code
-- `print()`, `input()`, variables, data types
-- Arithmetic operations
-- Comments & indentation
-- Mini-project: Simple calculator
-
-#### Session 2
-- `if`, `elif`, `else` statements
-- Logical and comparison operators
-- Menu system with conditions
-- **Big Project Part 1**: Login system using `if-else`
+### 🗓️ Weekly Learning Pattern
+Each week follows a consistent, pedagogical 3-session progression:
+```text
+Session One: Learn the main concepts
+     ↓
+Session Two: Continue the concepts and build guided examples
+     ↓
+Session Three: Practice, project development, challenges, review, and application
+```
+> **Note**: Session Three is purposely designed around hands-on practice, guided application, weekly projects, challenges, and consolidating previously learned concepts rather than purely passive lecture theory.
 
 ---
 
-### ✅ Week 2: Loops + Lists
+## 🎯 Learning Outcomes
 
-#### Session 3
-- `for`, `while`, `range()`, `break`, `continue`
-- Nested loops
-- Mini-project: Number guessing game
-
-#### Session 4
-- Lists: creation, access, modification
-- List methods: `append()`, `insert()`, `remove()`, slicing
-- **Big Project Part 2**: Store and manage records using lists
-
----
-
-### ✅ Week 3: Functions + Dictionaries
-
-#### Session 5
-- Defining and calling functions
-- Parameters and `return` values
-- Scope: local vs global
-- Mini-project: Function-based calculator
-
-#### Session 6
-- Dictionaries: key-value pairs, loops
-- Nested dictionaries
-- **Big Project Part 3**: Store structured data using dictionaries
+By completing this 8-week roadmap, students will be able to:
+- Understand core Python fundamentals and syntax
+- Write interactive CLI Python programs
+- Manipulate Python data structures (lists, tuples, dictionaries, sets)
+- Create reusable, modular functions
+- Read and write local files
+- Work with structured JSON and CSV data
+- Handle runtime errors and exceptions gracefully
+- Import and utilize Python standard library modules
+- Debug applications and inspect tracebacks effectively
+- Apply Object-Oriented Programming (OOP) principles cleanly
+- Manage third-party packages and Python virtual environments (`pip`, `venv`)
+- Track code changes using Git and collaborate on GitHub
+- Organize complete, multi-file Python projects
+- Make HTTP requests and interact with REST APIs
+- Write basic automated tests (`unittest`)
+- Architect, test, document, and present a capstone software project
 
 ---
 
-### ✅ Week 4: Strings + File Handling
+## 🗺️ Course Progression
 
-#### Session 7
-- String methods: `lower()`, `upper()`, `split()`, `join()`
-- Indexing, slicing, formatting with f-strings
-- Mini-project: Text analysis (word count, palindrome checker)
-
-#### Session 8
-- File handling: `open()`, `read()`, `write()`, `with`
-- Reading/writing structured data to file
-- **Big Project Part 4**: Save/load project data to/from file
-
----
-
-### ✅ Week 5: Error Handling + Refinement
-
-#### Session 9
-- `try`, `except`, `finally`
-- Handling common exceptions (e.g., `ValueError`, `ZeroDivisionError`)
-- Useful modules: `random`, `math`, `datetime`
-- Mini-project: Dice roller / Safe calculator
-
-#### Session 10
-- Integrate all features (functions, lists, file I/O)
-- Add search, filter, and delete features
-- **Big Project Part 5**: Finalize app features
+```text
+Week 1: Python Foundations
+     ↓
+Week 2: Loops and Python Collections
+     ↓
+Week 3: Functions and Program Organization
+     ↓
+Week 4: Strings and Data Persistence
+     ↓
+Week 5: Reliable Python Applications
+     ↓
+Week 6: Object-Oriented Programming
+     ↓
+Week 7: Python Development Tools
+     ↓
+Week 8: APIs, Testing, and Capstone Development
+```
 
 ---
 
-### ✅ Week 6: Introduction to OOP + Final Presentation
+## 📊 Curriculum Summary Table
 
-#### Session 11
-- Classes and objects
-- `__init__()`, attributes, and methods
-- Refactor project using classes
-- Practice: Student class with methods
-
-#### Session 12
-- Final integration and polishing
-- Class-based project demo
-- Student presentations and peer feedback
-
----
-
-## 🚀 Final Project Options
-
-Choose one main project and build it over the 6 weeks:
-- Student Management System
-- Contact Book
-- Quiz App
-- To-Do List Manager
-- Expense Tracker
-
-Each project should include:
-- Functional menu system
-- File I/O
-- Error handling
-- Class-based structure (final version)
+| Week   | Main Topics                                                   | Main Project                         |
+| ------ | ------------------------------------------------------------- | ------------------------------------ |
+| Week 1 | Python basics, variables, input, and conditions               | Student Grade System                 |
+| Week 2 | Loops, lists, tuples, dictionaries, and sets                  | Student Information Collector        |
+| Week 3 | Functions, return values, scope, and program organization     | Functional Student Management System |
+| Week 4 | Strings, files, JSON, and CSV                                 | Persistent Student Management System |
+| Week 5 | Exceptions, modules, debugging, and logging                   | Reliable Student Management System   |
+| Week 6 | Classes, objects, and basic inheritance                       | OOP Student Management System        |
+| Week 7 | Virtual environments, packages, Git, and project organization | Structured GitHub Project            |
+| Week 8 | APIs, testing, final project, and presentation                | Capstone Project                     |
 
 ---
 
-## 📚 Resources
+## 🗓️ Detailed 8-Week Curriculum
 
-- [Python Official Docs](https://docs.python.org/3/)
-- [W3Schools Python Tutorial](https://www.w3schools.com/python/)
-- [Real Python](https://realpython.com/)
-- [PyBites](https://codechalleng.es/bites/)
-
----
-
-## 🤝 Contributing
-
-Have a suggestion or want to improve the roadmap?
-
-1. Fork the repo  
-2. Create a new branch (`git checkout -b improve-roadmap`)  
-3. Commit your changes (`git commit -m improve: added string practice`)  
-4. Push and open a pull request
+### ✅ Week One — Python Foundations
+- **Session One**: Introduction to Python (Programming concepts, Python uses, installation, VS Code setup, running scripts, syntax, indentation, comments, `print()`) *(Status: Complete)*
+- **Session Two**: Variables, Data Types, Input, and Operators (Variables, strings, integers, floats, booleans, `type()`, `input()`, type casting, arithmetic/assignment/comparison operators) *(Status: Complete)*
+- **Session Three**: Conditions and Weekly Project (`if`, `elif`, `else`, logical operators `and`/`or`/`not`, nested conditions, Grade System project, weekly exercises & challenges) *(Status: Planned)*
 
 ---
 
-## 🧑‍🏫 Maintained By
+### ✅ Week Two — Loops and Python Collections
+- **Session One**: Loops (`while`, `for`, `range()`, loop counters, infinite loops, `break`, `continue`, simple nested loops) *(Status: Complete)*
+- **Session Two**: Lists and Tuples (Creating lists, indexing, negative indexes, updating/adding/removing items, list methods, slicing, looping lists, introduction to tuples vs. lists) *(Status: Complete)*
+- **Session Three**: Dictionaries, Sets, and Weekly Project (Dictionaries, keys/values, adding/updating/removing dictionary items, dictionary methods, nested data, sets, unique values, Student Information Collector project) *(Status: Planned)*
 
-This roadmap is created and maintained by [Mahi Zeki](mailto:mahizmukhtar@gmail.com), co-founder of **EthioNext** and educator at **Cyber Vanguard** Club (AAiT).
+---
 
-> “Empowering students to learn by doing — one project at a time.”  
-— Mahi Zeki
+### ✅ Week Three — Functions and Program Organization
+- **Session One**: Function Fundamentals (What functions are, usefulness, defining functions, calling functions, parameters, arguments) *(Status: Complete)*
+- **Session Two**: Return Values and Function Design (`return`, local vs. global variables, scope, multiple parameters, default parameters, keyword arguments, simple docstrings) *(Status: Complete)*
+- **Session Three**: Program Decomposition and Functional Project (Breaking large programs into smaller functions, single responsibility principle, avoiding duplicate code, CLI menus, Functional Student Management System, weekly challenge) *(Status: Planned)*
+
+---
+
+### ✅ Week Four — Strings and Data Persistence
+- **Session One**: Strings in Depth (Indexing, negative indexing, slicing, string methods, f-strings, string validation `isdigit()`/`isalpha()`/`isalnum()`, searching text) *(Status: Complete)*
+- **Session Two**: Text Files and File Paths (Opening/reading/writing/appending files, `with open()`, relative vs. absolute paths, introduction to `pathlib`) *(Status: Complete)*
+- **Session Three**: JSON, CSV, and Persistent Applications (JSON objects & arrays, saving/loading JSON, CSV files, rows/columns/headers, reading & writing CSV, Persistent Student Management project) *(Status: Planned)*
+
+---
+
+### ✅ Week Five — Reliable Python Applications
+- **Session One**: Errors and Exception Handling (Syntax/runtime/logical errors, exceptions, `try`, `except`, specific exceptions, `else`, `finally`, input validation, Error-Safe Calculator) *(Status: Complete)*
+- **Session Two**: Modules and the Python Standard Library (Modules, importing, `random`, `math`, `datetime`, `os`, `pathlib`, custom modules, importing custom functions) *(Status: Complete)*
+- **Session Three**: Debugging, Logging, and Project Improvement (Reading error messages & tracebacks, finding line numbers, step-by-step debugging, temporary output, VS Code breakpoints, inspecting variables, introduction to `logging`, adding Search/Update/Delete to Student Management project) *(Status: Planned)*
+
+---
+
+### ✅ Week Six — Object-Oriented Programming
+- **Session One**: Classes and Objects (OOP principles, classes, objects, `__init__()`, `self`, attributes, methods, multiple objects) *(Status: Complete)*
+- **Session Two**: Building Class-Based Applications (Object collections, updating object information, object-to-dictionary conversion, class responsibilities, Student & Student Manager classes) *(Status: Complete)*
+- **Session Three**: Basic Inheritance and OOP Project (Parent classes, child classes, basic inheritance, reusing attributes and methods, converting Student Management System to an OOP project) *(Status: Planned)*
+
+---
+
+### ✅ Week Seven — Python Development Tools
+- **Session One**: Virtual Environments and Packages (Python packages, `pip`, virtual environments, creating & activating venvs, installing packages, `requirements.txt`) *(Status: Planned)*
+- **Session Two**: Git and GitHub (Version control, Git, GitHub, repositories, `git init`, `git status`, `git add`, `git commit`, `git push`, cloning repositories, `.gitignore`) *(Status: Planned)*
+- **Session Three**: Project Structure and Clean Code (Organizing Python projects, `main.py`, modules, data/tests folders, README files, descriptive naming, clean code, comments, docstrings, `if __name__ == "__main__":`) *(Status: Planned)*
+
+---
+
+### ✅ Week Eight — APIs, Testing, and Capstone Development
+- **Session One**: Working With APIs (What an API is, HTTP requests/responses, URLs, endpoints, methods, status codes, JSON responses, installing & using `requests`, simple API application) *(Status: Planned)*
+- **Session Two**: Introduction to Testing (Why testing matters, expected vs. actual results, manual testing, assertions, automated testing, introduction to `unittest`) *(Status: Planned)*
+- **Session Three**: Final Project Development and Presentation (Course review, final project planning, implementation, testing, debugging, project README, Git repository, final project checklist, final presentation, course conclusion) *(Status: Planned)*
+
+---
+
+## 📂 Repository Structure
+
+```text
+Python-Begginer-Roadmap/
+│
+├── README.md                      # Main 8-week curriculum roadmap & course documentation
+├── Projects Manual/               # PDF feature specification guides for student final projects
+│   ├── Contact Book System Features.pdf
+│   ├── Expense Tracker System Features.pdf
+│   ├── Mini To-Do List Manager.pdf
+│   ├── Quiz App System Features.pdf
+│   ├── Student Management System Features List.pdf
+│   └── To-Do List Manager Featuers.pdf
+│
+└── Weeks/                         # Course curriculum lessons by week
+    ├── Week-One/
+    │   ├── ReadMe.md              # Week 1 overview
+    │   ├── session-one/           # Session 1: Introduction to Python (Complete)
+    │   ├── session-two/           # Session 2: Variables, Input & Operators (Complete)
+    │   └── session-three/         # Session 3: Conditions & Weekly Project (Planned Scaffold)
+    ├── Week-Two/
+    │   ├── ReadMe.md
+    │   ├── session-one/           # Session 1: Loops (Complete)
+    │   ├── session-two/           # Session 2: Lists & Tuples (Complete)
+    │   └── session-three/         # Session 3: Dictionaries, Sets & Project (Planned Scaffold)
+    ├── Week-Three/
+    │   ├── ReadMe.md
+    │   ├── session-one/           # Session 1: Function Fundamentals (Complete)
+    │   ├── session-two/           # Session 2: Return Values & Scope (Complete)
+    │   └── session-three/         # Session 3: Program Decomposition & Project (Planned Scaffold)
+    ├── Week-Four/
+    │   ├── ReadMe.md
+    │   ├── session-one/           # Session 1: Strings in Depth (Complete)
+    │   ├── session-two/           # Session 2: Text Files & Paths (Complete)
+    │   └── session-three/         # Session 3: JSON, CSV & Persistent Apps (Planned Scaffold)
+    ├── Week-Five/
+    │   ├── ReadMe.md
+    │   ├── session-one/           # Session 1: Errors & Exception Handling (Complete)
+    │   ├── session-two/           # Session 2: Modules & Standard Library (Complete)
+    │   └── session-three/         # Session 3: Debugging, Logging & Improvement (Planned Scaffold)
+    ├── Week-Six/
+    │   ├── ReadMe.md
+    │   ├── session-one/           # Session 1: Classes & Objects (Complete)
+    │   ├── session-two/           # Session 2: Building Class-Based Apps (Complete)
+    │   └── session-three/         # Session 3: Basic Inheritance & OOP Project (Planned Scaffold)
+    ├── Week-Seven/
+    │   ├── ReadMe.md              # Week 7 Overview (Planned Scaffold)
+    │   ├── session-one/           # Session 1: Virtual Environments & Packages (Planned Scaffold)
+    │   ├── session-two/           # Session 2: Git & GitHub (Planned Scaffold)
+    │   └── session-three/         # Session 3: Project Structure & Clean Code (Planned Scaffold)
+    └── Week-Eight/
+        ├── ReadMe.md              # Week 8 Overview (Planned Scaffold)
+        ├── session-one/           # Session 1: Working With APIs (Planned Scaffold)
+        ├── session-two/           # Session 2: Introduction to Testing (Planned Scaffold)
+        └── session-three/         # Session 3: Capstone Development & Presentation (Planned Scaffold)
+```
+
+---
+
+## 🛠️ How to Use This Repository
+
+1. **Navigate Weekly Folders**: Open the folder inside `Weeks/` corresponding to your current week (e.g., `Weeks/Week-One/`).
+2. **Read the Weekly Overview**: Start by reading the week's `ReadMe.md` to understand objectives and session summaries.
+3. **Follow the Sessions Sequentially**: Work through `session-one`, `session-two`, and `session-three` in order.
+4. **Practice by Typing**: Type every code example into your editor yourself—avoid copy-pasting so you build muscle memory.
+
+### 💻 How to Run Python Programs
+To run a Python script locally:
+1. Open a terminal or command prompt inside your project folder.
+2. Check your Python version:
+   ```bash
+   python --version
+   ```
+3. Run any script by typing:
+   ```bash
+   python script_name.py
+   ```
+
+---
+
+## 📋 Student Guidelines & Final Projects
+
+### Final Project Options
+Explore the `Projects Manual/` directory to select your capstone final project track:
+- **Student Management System**
+- **Contact Book System**
+- **Expense Tracker System**
+- **Quiz Application**
+- **To-Do List Manager**
+
+Each project must incorporate interactive menus, file/JSON persistence, modular functions, error handling, Object-Oriented structure, and a project `README.md`.
+
+---
+
+## 📚 Helpful Resources
+- [Python Official Documentation](https://docs.python.org/3/)
+- [Real Python Tutorials](https://realpython.com/)
+- [W3Schools Python Guide](https://www.w3schools.com/python/)
+
+---
+
+## 🤝 Contribution Guide
+Have suggestions to improve this roadmap?
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/curriculum-improvement`)
+3. Commit your changes (`git commit -m "improve: added week 2 session three examples"`)
+4. Push to your branch and open a Pull Request
+
+---
+
+## 🧑‍🏫 Author & Instructor Information
+
+Created and maintained by **[Mahi Zeki](mailto:mahizmukhtar@gmail.com)**, co-founder of **EthioNext** and educator at **Cyber Vanguard** Club (AAiT).
+
+> *“Empowering students to learn by doing — one project at a time.”*  
+> — Mahi Zeki
 
 ---
 
 ## ⭐ Show Your Support
-
-If you like this roadmap, please give this repo a ⭐ and share it with your friends!
-
-
+If you find this roadmap helpful on your coding journey, please give the repository a ⭐ and share it with your peers!

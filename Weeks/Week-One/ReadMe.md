@@ -1,35 +1,43 @@
-# 📘 Week 1 Overview: Python Basics + Decision Making
+# 📘 Week 1 Overview: Python Foundations
 
-Welcome to Week 1 of your Python learning journey! This week, you'll learn how to write your first lines of Python code, understand variables, get input from users, and use `if-else` statements to make decisions. By the end of this week, you'll build your first working project: a login system with a menu.
-
----
-
-## 🧑‍💻 Session 1: Python Basics & Simple Calculator
-
-### ✅ What You’ll Learn:
-- What Python is and how to install it
-- Writing your first program using `print()`
-- Taking user input with `input()`
-- Using variables and understanding data types
-- Performing arithmetic operations
-- Writing clean code using comments and indentation
-
-### 🛠️ Mini Project:
-- **Simple Calculator**: Takes two numbers and an operation (+, -, *, /) and displays the result
+Welcome to Week 1 of your Python learning journey! This week, you will learn how to write your first lines of Python code, understand variables and data types, get interactive input from users, and use `if-elif-else` conditional branches to make decisions. By the end of this week, you will build interactive scripts and complete your first guided weekly project.
 
 ---
 
-## 🔐 Session 2: Conditional Logic & Login System
+## 🎯 Learning Objectives
 
-### ✅ What You’ll Learn:
-- Using `if`, `elif`, and `else` to make decisions
-- Comparing values using logical and comparison operators
-- Writing nested conditions (e.g., age with ID check)
-- Building a basic login authentication system
-- Adding a retry system (3 attempts only)
-- Displaying a fake menu after login
-
-### 🚀 Project Start:
-- **Login System with Menu**: Accepts username/password, allows 3 tries, and displays a basic menu (View/Add/Exit)
+By completing Week 1, you will be able to:
+- Install Python and set up a code editor (VS Code)
+- Write and execute Python scripts using `print()` and `input()`
+- Store and manipulate data using variables and primitive types (strings, integers, floats, booleans)
+- Perform calculations and comparisons using arithmetic, assignment, and comparison operators
+- Control program flow using conditional branches (`if`, `elif`, `else`) and logical operators (`and`, `or`, `not`)
 
 ---
+
+## 🧑‍💻 Session 1: Introduction to Python
+- **Summary**: Learn what Python is, install your environment, write your first script (`print()`), understand indentation and comments, and execute programs.
+- **Status**: Complete
+
+---
+
+## 🔢 Session 2: Variables, Data Types, Input, and Operators
+- **Summary**: Capture user input (`input()`), store values in variables, inspect types (`type()`), convert types, and use arithmetic/assignment/comparison operators. Includes the Simple Calculator mini-project.
+- **Status**: Complete
+
+---
+
+## 🔀 Session 3: Conditions and Weekly Project
+- **Summary**: Master conditional branching (`if`, `elif`, `else`), logical operators (`and`, `or`, `not`), nested conditions, and build the interactive **Student Grade System** project.
+- **Status**: Planned
+
+---
+
+## 🛠️ Weekly Project
+
+**Student Grade System**: An interactive application that evaluates numerical scores, validates score ranges, determines letter grades and honors distinctions using conditional logic, and displays formatted feedback.
+
+---
+
+## 🏆 Expected Student Outcomes
+By the end of Week 1, students will confidently write multi-line Python scripts that take user input, perform numerical calculations, evaluate conditions, and output clear results.

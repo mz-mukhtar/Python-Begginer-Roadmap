@@ -1,44 +1,49 @@
-# 📘 Week 5 Overview: Error Handling, Modules, and Project Improvement
+# 📘 Week 5 Overview: Reliable Python Applications
 
-Welcome to Week 5 of the Python Beginner Roadmap! 🎉
+Welcome to Week 5! 🎉
 
-In Week 4, you learned how to save and load data permanently using files. But what happens if a file doesn't exist? Or what if a user types words when your program asks for a number? Without preparation, Python programs will crash and close unexpectedly.
+In Week 4, you learned how to save and load data permanently using files. But what happens if a file doesn't exist? Or what if a user types words when your program asks for a number? Without preparation, Python scripts will crash and close unexpectedly.
 
-This week, you will learn how to make your programs **error-safe** and reliable using exception handling (`try` and `except`). You will also discover how to use **built-in Python modules** (`random`, `math`, and `datetime`) so you don't have to write everything from scratch. Finally, you will take your existing project and add **Search, Update, and Delete** features so it functions like a complete application!
-
----
-
-## 🛡️ Session 1: Python Error Handling & Input Validation
-
-### ✅ What You’ll Learn:
-- Why programs fail and the difference between **Syntax**, **Runtime**, and **Logical** errors
-- How to prevent crashes using `try`, `except`, `else`, and `finally`
-- Handling specific exceptions like `ValueError`, `ZeroDivisionError`, and `FileNotFoundError`
-- Protecting file operations so missing files don't break your app
-- Writing bulletproof **input validation** loops using `while True`
-
-### 🛠️ Mini Project:
-- **Error-Safe Calculator**: A calculator that handles division by zero and invalid input without crashing.
+This week, you will learn how to make your applications **error-safe** and reliable using exception handling (`try` and `except`), leverage Python's rich standard library modules (`random`, `math`, `datetime`, `os`, `pathlib`), master diagnostic tracebacks and logging, and upgrade your project with full Search, Update, and Delete features.
 
 ---
 
-## 📦 Session 2: Python Modules & Project Improvement
+## 🎯 Learning Objectives
 
-### ✅ What You’ll Learn:
-- What a Python module is and how to import reusable code (`import module_name`)
-- Using the `random` module (`randint()`, `choice()`) for random numbers and selections
-- Using the `math` module (`sqrt()`, `ceil()`, `floor()`) for everyday math operations
-- Working with dates and times using the `datetime` module (`datetime.now()`)
-- Integrating **Search**, **Update**, and **Delete** features into your existing project
-
-### 🚀 Weekly Project Improvement:
-- **Integrated Student Management System (or To-Do App)**: Upgrading your project with full Search, Update, Delete, file persistence, and robust error handling!
+By completing Week 5, you will be able to:
+- Distinguish between syntax errors, runtime errors, and logical errors
+- Prevent crashes using `try`, `except`, `else`, and `finally` blocks
+- Write resilient input validation loops (`while True`)
+- Import standard library modules (`random`, `math`, `datetime`, `os`, `pathlib`)
+- Read error tracebacks and debug code systematically
+- Use basic application logging instead of temporary print statements
+- Add full Search, Update, and Delete capabilities to your application
 
 ---
 
-## 🌟 Skills You Will Gain By the End of Week 5:
-- Writing resilient Python programs that gracefully handle unexpected user input and missing files
-- Reusing Python's powerful built-in libraries (`random`, `math`, `datetime`)
-- Building full **CRUD** (Create, Read, Update, Delete) workflows for structured data applications
+## 🛡️ Session 1: Errors and Exception Handling
+- **Summary**: Master syntax/runtime/logical errors, `try`, `except`, specific exceptions (`ValueError`, `ZeroDivisionError`, `FileNotFoundError`), `else`, `finally`, input validation loops, and build the Error-Safe Calculator.
+- **Status**: Complete
 
-👉 Ready for [Week 6 →](../Week-Six/ReadMe.md)? Next week, we’ll dive into **Object-Oriented Programming (OOP)** and prepare your final capstone project!
+---
+
+## 📦 Session 2: Modules and the Python Standard Library
+- **Summary**: Import built-in modules (`random`, `math`, `datetime`, `os`, `pathlib`), create custom modules, import helper functions across files, and build interactive games.
+- **Status**: Complete
+
+---
+
+## 🐞 Session 3: Debugging, Logging, and Project Improvement
+- **Summary**: Read error tracebacks, find failing line numbers, inspect variables, set VS Code breakpoints, introduce `logging`, and implement Search, Update, and Delete in the Student Management project.
+- **Status**: Planned
+
+---
+
+## 🛠️ Weekly Project
+
+**Reliable Student Management System**: A crash-proof application featuring full Search, Update, and Delete operations, permanent file storage, comprehensive input validation, and clear diagnostic feedback.
+
+---
+
+## 🏆 Expected Student Outcomes
+By the end of Week 5, students will write resilient, crash-proof Python applications that handle edge cases cleanly and incorporate standard library utilities.
