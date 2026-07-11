@@ -247,6 +247,36 @@ Each project must incorporate interactive menus, file/JSON persistence, modular 
 
 ---
 
+## 🧑‍💻 How to Use This Repository (Hands-On Learning Environment)
+
+Every single session across all 8 weeks (`Weeks/Week-One` to `Weeks/Week-Eight`) contains a standardized, hands-on learning structure designed for active practice:
+
+```text
+session-one/
+  ├── ReadMe.md                # Detailed session lesson instruction
+  ├── examples/                # 4-5 numbered runnable script examples (01-*.py to 05-*.py)
+  ├── exercises/
+  │    ├── README.md           # Guided prompts & objectives for 5 structured exercises
+  │    └── starter/            # Pre-scaffolded starter code files (exercise-01.py to exercise-05.py)
+  ├── solutions/               # Complete, verified solutions for self-checking
+  ├── challenge/
+  │    ├── README.md           # Independent session challenge prompt
+  │    ├── challenge-starter.py# Starter code for the challenge
+  │    └── challenge-solution.py# Full reference solution implementation
+  ├── quiz.md                  # Quick conceptual multiple-choice check with expandable answers
+  └── learning-checkpoint.md   # Self-assessment checklist before moving forward
+```
+
+### Recommended Student Workflow
+1. **Read the Lesson**: Start with the main `ReadMe.md` in each session directory.
+2. **Run the Examples**: Navigate into `examples/` and run `python3 01-*.py` through `05-*.py` to observe concepts in action.
+3. **Complete the Exercises**: Open `exercises/README.md`, edit the starter files inside `exercises/starter/`, and test your code.
+4. **Compare with Solutions**: Review your implementations against `solutions/`.
+5. **Tackle the Challenge**: Attempt the independent `challenge/` to synthesize what you learned.
+6. **Take the Quiz & Checkpoint**: Verify your conceptual mastery with `quiz.md` and check off your skills in `learning-checkpoint.md`.
+
+---
+
 ## 📚 Helpful Resources
 - [Python Official Documentation](https://docs.python.org/3/)
 - [Real Python Tutorials](https://realpython.com/)
