@@ -30,7 +30,7 @@ By completing Week 2, you will be able to:
 
 ## 🗝️ Session 3: Dictionaries, Sets, and Weekly Project
 - **Summary**: Work with key-value pairs in dictionaries, add/update/remove dictionary items, handle nested data, use sets for unique values, and build the **Student Information Collector** project.
-- **Status**: Planned
+- **Status**: Complete
 
 ---
 

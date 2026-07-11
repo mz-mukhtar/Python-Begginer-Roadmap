@@ -35,7 +35,7 @@ By completing Week 5, you will be able to:
 
 ## 🐞 Session 3: Debugging, Logging, and Project Improvement
 - **Summary**: Read error tracebacks, find failing line numbers, inspect variables, set VS Code breakpoints, introduce `logging`, and implement Search, Update, and Delete in the Student Management project.
-- **Status**: Planned
+- **Status**: Complete
 
 ---
 

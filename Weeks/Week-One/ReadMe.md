@@ -29,7 +29,7 @@ By completing Week 1, you will be able to:
 
 ## 🔀 Session 3: Conditions and Weekly Project
 - **Summary**: Master conditional branching (`if`, `elif`, `else`), logical operators (`and`, `or`, `not`), nested conditions, and build the interactive **Student Grade System** project.
-- **Status**: Planned
+- **Status**: Complete
 
 ---
 

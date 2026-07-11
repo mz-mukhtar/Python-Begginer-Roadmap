@@ -30,7 +30,7 @@ By completing Week 3, you will be able to:
 
 ## 🏗️ Session 3: Program Decomposition and Functional Project
 - **Summary**: Decompose large scripts into single-responsibility functions, eliminate duplicate code, create interactive application menus, and build the **Functional Student Management System**.
-- **Status**: Planned
+- **Status**: Complete
 
 ---
 

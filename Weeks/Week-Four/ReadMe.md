@@ -31,7 +31,7 @@ By completing Week 4, you will be able to:
 
 ## 💾 Session 3: JSON, CSV, and Persistent Applications
 - **Summary**: Serialize structured dictionaries and lists to JSON objects/arrays, read/write CSV headers and rows, and build the **Persistent Student Management System**.
-- **Status**: Planned
+- **Status**: Complete
 
 ---
 

@@ -35,7 +35,7 @@ By completing Week 6, you will be able to:
 
 ## 🧬 Session 3: Basic Inheritance and OOP Project
 - **Summary**: Master parent classes, child classes, basic inheritance, reusing attributes/methods cleanly, and convert the Student Management System into an OOP architecture.
-- **Status**: Planned
+- **Status**: Complete
 
 ---
 
