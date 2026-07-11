@@ -36,9 +36,7 @@ By completing Week 2, you will be able to:
 
 ## 🛠️ Weekly Project
 
-**Student Information Collector**: An interactive program that collects multi-field student profiles into structured dictionaries, prevents duplicate entries using sets, and displays organized student lists.
-
----
+**Student Information Collector**: An interactive program that collects multi-field student profiles into structured dictionaries, prevents duplicate entries using sets, and displays organized student lists.\n\n\nOpen Runnable Project:\n[Week Two — Student Information Collector](../../Projects/weekly-projects/week-two/)\n\n---
 
 ## 🏆 Expected Student Outcomes
 By the end of Week 2, students will be able to automate repetitive workflows and structure multi-item datasets using lists, tuples, dictionaries, and sets.

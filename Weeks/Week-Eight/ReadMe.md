@@ -36,9 +36,7 @@ By completing Week 8, you will be able to:
 
 ## 🛠️ Weekly Project Goal
 
-**Capstone Project**: Students will build, test, polish, and present a complete practical Python application selected from the **Projects Manual**, integrating modular functions, OOP classes, persistent storage, input validation, structured documentation, and version control.
-
----
+**Capstone Project**: Students will build, test, polish, and present a complete practical Python application selected from the **Projects Manual**, integrating modular functions, OOP classes, persistent storage, input validation, structured documentation, and version control.\n\n\nOpen Runnable Project:\n[Week Eight — Tested Student Management Capstone](../../Projects/weekly-projects/week-eight/)\n\n---
 
 ## 📝 Development Status
 

@@ -1,0 +1,14 @@
+[
+    {
+        "q_id": "Q-001",
+        "prompt": "What keyword is used to define a function in Python?",
+        "choices": [
+            "func",
+            "def",
+            "function",
+            "lambda"
+        ],
+        "correct_index": 1,
+        "category": "Python Basics"
+    }
+]

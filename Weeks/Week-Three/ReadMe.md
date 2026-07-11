@@ -36,9 +36,7 @@ By completing Week 3, you will be able to:
 
 ## 🛠️ Weekly Project
 
-**Functional Student Management System**: A command-line application organized into dedicated functions for adding, viewing, searching, and updating student records using clean menus.
-
----
+**Functional Student Management System**: A command-line application organized into dedicated functions for adding, viewing, searching, and updating student records using clean menus.\n\n\nOpen Runnable Project:\n[Week Three — Function-Based Student Management System](../../Projects/weekly-projects/week-three/)\n\n---
 
 ## 🏆 Expected Student Outcomes
 By the end of Week 3, students will structure clear, modular Python programs using reusable functions and well-designed CLI menus.

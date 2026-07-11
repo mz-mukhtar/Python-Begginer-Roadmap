@@ -35,9 +35,7 @@ By completing Week 1, you will be able to:
 
 ## 🛠️ Weekly Project
 
-**Student Grade System**: An interactive application that evaluates numerical scores, validates score ranges, determines letter grades and honors distinctions using conditional logic, and displays formatted feedback.
-
----
+**Student Grade System**: An interactive application that evaluates numerical scores, validates score ranges, determines letter grades and honors distinctions using conditional logic, and displays formatted feedback.\n\n\nOpen Runnable Project:\n[Week One — Smart Student Grade System](../../Projects/weekly-projects/week-one/)\n\n---
 
 ## 🏆 Expected Student Outcomes
 By the end of Week 1, students will confidently write multi-line Python scripts that take user input, perform numerical calculations, evaluate conditions, and output clear results.

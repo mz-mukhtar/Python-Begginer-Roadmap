@@ -1,0 +1,13 @@
+[
+    {
+        "student_id": "STU-001",
+        "name": "Sara Ahmed",
+        "age": 20,
+        "department": "Computer Engineering",
+        "email": "sara@example.com",
+        "courses": [
+            "Python 101",
+            "Digital Systems"
+        ]
+    }
+]

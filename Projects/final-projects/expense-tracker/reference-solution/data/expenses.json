@@ -1,0 +1,9 @@
+[
+    {
+        "expense_id": "EXP-001",
+        "description": "Python Textbook",
+        "amount": 45.0,
+        "category": "Education",
+        "date_str": "2026-07-11"
+    }
+]

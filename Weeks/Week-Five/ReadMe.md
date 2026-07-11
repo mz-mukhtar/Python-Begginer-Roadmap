@@ -41,9 +41,7 @@ By completing Week 5, you will be able to:
 
 ## 🛠️ Weekly Project
 
-**Reliable Student Management System**: A crash-proof application featuring full Search, Update, and Delete operations, permanent file storage, comprehensive input validation, and clear diagnostic feedback.
-
----
+**Reliable Student Management System**: A crash-proof application featuring full Search, Update, and Delete operations, permanent file storage, comprehensive input validation, and clear diagnostic feedback.\n\n\nOpen Runnable Project:\n[Week Five — Reliable Student Management System](../../Projects/weekly-projects/week-five/)\n\n---
 
 ## 🏆 Expected Student Outcomes
 By the end of Week 5, students will write resilient, crash-proof Python applications that handle edge cases cleanly and incorporate standard library utilities.

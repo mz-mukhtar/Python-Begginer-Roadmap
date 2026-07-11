@@ -35,9 +35,7 @@ By completing Week 7, you will be able to:
 
 ## 🛠️ Weekly Project Goal
 
-**Structured GitHub Project**: Students will initialize a professional Python project repository featuring a dedicated virtual environment, `requirements.txt`, clean modular hierarchy (`main.py` and supporting modules), comprehensive `README.md`, and version tracking pushed to GitHub.
-
----
+**Structured GitHub Project**: Students will initialize a professional Python project repository featuring a dedicated virtual environment, `requirements.txt`, clean modular hierarchy (`main.py` and supporting modules), comprehensive `README.md`, and version tracking pushed to GitHub.\n\n\nOpen Runnable Project:\n[Week Seven — Professionally Organized Student Management System](../../Projects/weekly-projects/week-seven/)\n\n---
 
 ## 📝 Development Status
 

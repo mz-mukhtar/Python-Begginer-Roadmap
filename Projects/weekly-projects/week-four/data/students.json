@@ -1,0 +1,14 @@
+[
+    {
+        "student_id": "STU-001",
+        "name": "Sara Ahmed",
+        "age": 20,
+        "department": "Computer Engineering"
+    },
+    {
+        "student_id": "STU-002",
+        "name": "Abel Tadesse",
+        "age": 21,
+        "department": "Software Engineering"
+    }
+]

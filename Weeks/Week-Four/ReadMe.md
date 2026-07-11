@@ -37,9 +37,7 @@ By completing Week 4, you will be able to:
 
 ## 🛠️ Weekly Project
 
-**Persistent Student Management System**: An upgraded student management application that loads stored records from JSON or CSV files at launch and saves all modifications permanently to disk.
-
----
+**Persistent Student Management System**: An upgraded student management application that loads stored records from JSON or CSV files at launch and saves all modifications permanently to disk.\n\n\nOpen Runnable Project:\n[Week Four — Persistent Student Management System](../../Projects/weekly-projects/week-four/)\n\n---
 
 ## 🏆 Expected Student Outcomes
 By the end of Week 4, students will build persistent software applications that retain user records permanently across executions.

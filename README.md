@@ -277,6 +277,38 @@ session-one/
 
 ---
 
+## 🚀 Runnable Projects
+
+The repository includes complete, runnable Python applications inside the `Projects/` folder that connect directly to your weekly course progression:
+
+- **[Projects Hub (`Projects/README.md`)](Projects/README.md)**: Main hub explaining project progression and rules.
+- **[Weekly Projects (`Projects/weekly-projects/`)](Projects/weekly-projects/)**: Watch one continuous application—the **Student Management System**—evolve across all 8 weeks as you learn new Python skills.
+- **[Final Capstone Projects (`Projects/final-projects/`)](Projects/final-projects/)**: Choose one of 5 independent capstone tracks (`starter/` and `reference-solution/`) to prove your Python developer mastery.
+
+---
+
+## 🎒 Student and Instructor Resources
+
+The repository includes dedicated resource directories to support self-paced learning, classroom instruction, troubleshooting, and fair assessment:
+
+### Student Resources
+Explore **[Student Resources (`Student-Resources/`)](Student-Resources/)** for quick help outside main lessons:
+- **[Python Beginner Cheat Sheet](Student-Resources/Python-Cheat-Sheet.md)**: Quick-reference syntax and concept summary.
+- **[Common Python Errors Guide](Student-Resources/Common-Errors.md)**: Step-by-step traceback debugging guide.
+- **[Git and GitHub Cheat Sheet](Student-Resources/Git-Cheat-Sheet.md)**: Essential version control commands.
+- **[Python Project Planning Template](Student-Resources/Project-Planning-Template.md)**: Reusable project planning worksheet.
+- **[Python Learning Progress Checklist](Student-Resources/Learning-Checklist.md)**: Week-by-week skill self-assessment.
+
+### Instructor Guide
+Explore **[Instructor Guide (`Instructor-Guide/`)](Instructor-Guide/)** for trainers delivering the curriculum:
+- **[Eight-Week Teaching Schedule](Instructor-Guide/Teaching-Schedule.md)**: Complete 24-session pacing overview.
+- **[Instructor Session Delivery Plans](Instructor-Guide/Session-Plans.md)**: Actionable lesson delivery plans for all 24 sessions.
+- **[Classroom Activities Guide](Instructor-Guide/Classroom-Activities.md)**: Reusable warm-ups, pair coding, and group activities.
+- **[Student Assessment Guide](Instructor-Guide/Assessment-Guide.md)**: Assessment weighting and feedback strategies.
+- **[Final Project Evaluation Rubric](Instructor-Guide/Project-Rubric.md)**: Complete 100-point transparent capstone rubric.
+
+---
+
 ## 📚 Helpful Resources
 - [Python Official Documentation](https://docs.python.org/3/)
 - [Real Python Tutorials](https://realpython.com/)

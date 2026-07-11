@@ -41,9 +41,7 @@ By completing Week 6, you will be able to:
 
 ## 🛠️ Weekly Project
 
-**OOP Student Management System**: A clean Object-Oriented application utilizing custom `Student` and `StudentManager` classes with basic inheritance to encapsulate student records, file persistence, and CLI operations.
-
----
+**OOP Student Management System**: A clean Object-Oriented application utilizing custom `Student` and `StudentManager` classes with basic inheritance to encapsulate student records, file persistence, and CLI operations.\n\n\nOpen Runnable Project:\n[Week Six — Object-Oriented Student Management System](../../Projects/weekly-projects/week-six/)\n\n---
 
 ## 🏆 Expected Student Outcomes
 By the end of Week 6, students will comfortably write organized Object-Oriented Python code using classes, objects, methods, and basic inheritance.

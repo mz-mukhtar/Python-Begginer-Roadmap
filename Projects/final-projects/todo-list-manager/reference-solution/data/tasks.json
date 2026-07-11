@@ -1,0 +1,10 @@
+[
+    {
+        "task_id": "TASK-001",
+        "title": "Complete Python Project",
+        "description": "Finish the Week 8 capstone project",
+        "due_date": "2026-07-15",
+        "priority": "High",
+        "completed": false
+    }
+]
