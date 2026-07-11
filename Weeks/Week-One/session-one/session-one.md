@@ -110,11 +110,31 @@ is_student = True
   | String   |  "Amina"	     |      str   |
   | Boolean	 |  True/False	 |      bool  |
 
-🔎 You can check a variable’s type using:
+### Checking Types with the `type()` Function
+
+When working with variables, it is helpful to identify the type of a value. Python provides the built-in `type()` function for this purpose:
+
+```python
+student_name = "Sara"
+student_age = 20
+student_average = 85.5
+
+print(type(student_name))
+print(type(student_age))
+print(type(student_average))
 ```
-print(type(age))        # <class 'int'>
-print(type(name))       # <class 'str'>
+
+✅ Output:
+```text
+<class 'str'>
+<class 'int'>
+<class 'float'>
 ```
+
+- `str` represents text strings.
+- `int` represents whole integer numbers.
+- `float` represents decimal numbers.
+*(Note: We will study Boolean `bool` values in detail during Session Two!)*
 
 ---
 
@@ -142,29 +162,60 @@ print("Modulo:", a % b)
 
 ---
 
-## 💬 7. Comments and Indentation
-### Comments
+## 💬 7. Comments and Code Readability
 
-Use # to leave notes for yourself (not executed).
+### Python Comments
 
-# This is a comment
-```
-print("Hello!")  # This prints text
-```
-### Indentation
+In Python, any text following the `#` symbol on a line is treated as a **comment**:
 
-Python uses indentation (spaces/tabs) to group blocks of code.
+```python
+# This is a Python comment
+print("Hello, Python!")
+```
 
-Correct:
+- **Python ignores comments** completely when running your program.
+- **Comments help programmers understand code** by explaining why certain decisions were made.
+- **Comments can explain important logic**, but should not explain obvious code unnecessarily.
+
+#### Good Example:
+```python
+# Calculate the student's average score
+average_score = total_score / 3
 ```
-if 5 > 3:
-    print("5 is greater")
+
+#### Less Useful Example:
+```python
+# Print hello
+print("Hello")
 ```
-Incorrect (no indentation!):
+
+---
+
+### Code Readability Guidelines
+
+Writing clean, readable code makes it easier for you and others to understand your work. Keep these beginner practices in mind:
+- **Meaningful variable names**: Use clear names (`first_number`) instead of single letters (`a`).
+- **Correct indentation**: Python uses indentation (spaces) to group blocks of code.
+- **Spaces around operators**: Put spaces around symbols like `+` and `=` so code looks uncluttered.
+- **Avoid writing too much code on one line**: Separate steps logically.
+
+#### Compare:
+
+**Bad (hard to read):**
+```python
+a=20
+b=30
+c=a+b
 ```
-if 5 > 3:
-print("5 is greater")  # Will cause error
+
+**Better (clean and readable):**
+```python
+first_number = 20
+second_number = 30
+total = first_number + second_number
 ```
+
+*(Note: Professional developers follow an official formatting guide called PEP 8, which we will explore in detail during Week Seven!)*
 
 ---
 

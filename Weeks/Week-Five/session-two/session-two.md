@@ -15,17 +15,51 @@ By the end of this session, you will be able to:
 
 ---
 
-## 📦 1. Introduction to Modules
+## 📦 1. Introduction to Modules and Import Styles
 
-A **module** is simply a file containing reusable Python code—such as functions and tools—that someone else already wrote and tested.
+A **module** is simply a file containing Python code—such as functions, classes, and variables—that can be imported and reused in other programs.
 
-Python comes with a huge collection of built-in modules called the **Python Standard Library**. Using modules saves you massive amounts of time because you don't have to reinvent the wheel!
+### Why Create Custom Modules?
+As your programs grow, writing hundreds of lines of code inside a single `main.py` file becomes confusing. Breaking code into separate modules (for example, `file_helpers.py` or `math_utils.py`):
+1. **Keeps code organized**: Each file has a single, clear responsibility.
+2. **Promotes code reuse**: You can import helper functions across multiple projects without copying and pasting.
+3. **Makes collaboration easier**: Multiple developers can work on different module files simultaneously.
 
-To use a module in your program, you use the `import` keyword at the very top of your file:
+---
 
+### Three Ways to Import Modules
+
+#### 1️⃣ Full Module Import (`import module_name`)
+Imports the entire module. You access its functions using dot notation:
 ```python
-import module_name
+import math_utils
+
+result = math_utils.add(10, 5)
 ```
+
+#### 2️⃣ Specific Function Import (`from module_name import function`)
+Imports only the exact functions you need directly into your file:
+```python
+from math_utils import add, subtract
+
+print(add(10, 5))
+print(subtract(10, 5))
+```
+
+#### 3️⃣ Module Aliases (`import module_name as alias`)
+Gives a module a short nickname to save typing:
+```python
+import math_utils as mu
+
+print(mu.add(10, 5))
+```
+
+---
+
+### Best Practices for Modules
+- **Keep modules focused**: A module should handle one area (e.g., database tools or calculation tools).
+- **Use clear filenames**: Name your Python files using lowercase letters and underscores (`student_helpers.py`).
+- **Avoid circular imports**: Do not make `module_a.py` import `module_b.py` while `module_b.py` simultaneously imports `module_a.py`.
 
 ---
 

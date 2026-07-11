@@ -19,13 +19,41 @@ By the end of this session, you will be able to:
 
 ---
 
-## 📘 1. Conditional Statements: `if`, `elif`, `else`
+## 💡 1. Boolean Values
+
+In Python, a **Boolean** (`bool`) represents a simple yes/no or true/false answer. There are only two possible Boolean values:
+
+```python
+is_student = True
+has_completed_course = False
+```
+
+- Notice that `True` and `False` must always start with a capital letter.
+- Conditions and comparisons often produce Boolean results automatically!
+
+### Example:
+```python
+student_age = 20
+is_adult = student_age >= 18
+print(is_adult)
+```
+
+✅ Output:
+```text
+True
+```
+
+Because `20 >= 18` is correct, Python evaluates the expression as `True`.
+
+---
+
+## 📘 2. Conditional Statements: `if`, `elif`, `else`
 
 Conditional statements allow your program to decide **what to do next** based on conditions.
 
 ### 🧑‍💻 Example:
 
-```
+```python
 age = int(input("Enter your age: "))
 
 if age >= 18:
@@ -37,7 +65,7 @@ else:
 ```
 ---
 
-## 📊 2. Comparison Operators
+## 📊 3. Comparison Operators
 |    Operator    |    Meaning    |    Example    |
 |----------------|---------------|---------------|
 |    ==	         |    Equal to	 |    x == 5     |
@@ -49,12 +77,30 @@ else:
 
 ---
 
-## 🔗 3. Logical Operators
+## 🔗 4. Logical Operators
+
+Logical operators allow you to combine multiple Boolean conditions together:
+
 |    Operator    |        Meaning        |        Example        |
 |----------------|-----------------------|-----------------------|
 |    and         | True if both are true |	age >= 18 and has_id |
 |    or          |    True if at least one is true |age > 18 or has_permission|
 |    not	     |   Reverses the condition |	not logged_in |
+
+- **`and`** requires **both** conditions to be `True`.
+- **`or`** requires **at least one** condition to be `True`.
+- **`not`** reverses a Boolean result (`True` becomes `False`).
+
+### Example:
+```python
+student_age = 20
+has_student_id = True
+
+can_enter = student_age >= 18 and has_student_id
+print(can_enter)
+```
+
+> 💡 *Note: We will use logical operators inside larger decision-making programs during Session Three.*
 
 ---
 
@@ -82,10 +128,11 @@ else:
 
 ---
 
-## 📦 5. Nested Conditions
+## 📦 6. Nested Conditions
 
-You can place one if inside another:
-```
+A **nested condition** is simply an `if` statement inside another `if` statement. You use nested conditions when a second check should only happen if the first check succeeds:
+
+```python
 age = int(input("Enter your age: "))
 has_id = input("Do you have an ID? (yes/no): ")
 
@@ -98,9 +145,11 @@ else:
     print("You must be 18 or older.")
 ```
 
+> 💡 *Note: Session Three will be our main practice session where we build complete interactive conditional programs and projects!*
+
 ---
 
-## 🔐 6. Building a Basic Login System
+## 🔐 7. Building a Basic Login System
 🧑‍💻 Step-by-Step Login
 ```
 username = input("Username: ")
@@ -115,7 +164,7 @@ You can customize the values or ask users to set them first.
 
 ---
 
-## 🔁 7. Add Login Attempts (3 Tries Only)
+## 🔁 8. Add Login Attempts (3 Tries Only)
 
 Let’s improve the login system with a retry limit.
 ```
@@ -140,7 +189,7 @@ if attempts == 0:
 
 ---
 
-## 🧪 8. Simple Menu System After Login
+## 🧪 9. Simple Menu System After Login
 
 Let’s show a fake menu if login is successful.
 ```

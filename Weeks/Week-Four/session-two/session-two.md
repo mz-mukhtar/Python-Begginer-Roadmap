@@ -1,4 +1,4 @@
-# Session 8 – File Handling in Python
+# 📘 Week 4 – Session 2: Text Files and File Paths
 
 In this session, we’ll learn how to **read and write files** in Python.  
 File handling allows us to **save data permanently** (so it doesn’t disappear when the program stops running).  
@@ -84,25 +84,58 @@ file.close()
 
 ---
 
-## 5. Using `with` Statement
-Python provides a safe way to handle files using with.
-The `with` statement automatically closes the file after use.
-This is the recommended way to work with files.
+## 5. Using `with` Statement (Safe File Handling)
+
+Python provides a safe way to handle files using `with`.  
+The `with` statement **automatically closes the file** after the block finishes executing — even if an error occurs inside your program!
 
 ### Example:
-```
+```python
 with open("notes.txt", "r") as file:
     content = file.read()
     print(content)
 ```
-✔ No need to call `file.close()`.
-✔ It ensures safety if the program crashes.6. Writing Structured Data
+✔ No need to call `file.close()`.  
+✔ Prevents memory leaks and file corruption.
 
 ---
 
-## 6. Reading and Writing Structured Data
-Instead of plain text, sometimes we need structured data like lists and dictionaries.
-We can use simple text storage or modules like json.
+## 6. Relative Versus Absolute File Paths
+
+When opening files, Python needs to know **where** the file is located on your computer:
+
+### 1️⃣ Relative Paths
+A **relative path** looks for the file starting from the folder where your Python script is currently running:
+```python
+# Looks in the same folder as the script
+with open("notes.txt", "r") as file:
+    pass
+
+# Looks inside a subfolder named 'data'
+with open("data/students.txt", "r") as file:
+    pass
+```
+
+### 2️⃣ Absolute Paths
+An **absolute path** specifies the exact location from the root of your hard drive:
+```python
+# Linux / macOS absolute path
+with open("/home/user/documents/notes.txt", "r") as file:
+    pass
+
+# Windows absolute path
+with open("C:\\Users\\user\\Documents\\notes.txt", "r") as file:
+    pass
+```
+
+> 💡 *Beginners should start with **relative paths** keeping their text files in the same project folder as their Python code.*
+
+---
+
+## 7. Reading and Writing Structured Data (JSON & CSV Preparation)
+
+Instead of plain text, real applications need to save structured data like lists and dictionaries.
+While simple `.txt` files work for basic lists, structured records are best stored in **JSON** or **CSV** formats!
 
 ### Example: Save To-Do List as JSON
 ```
@@ -147,8 +180,10 @@ print("From JSON:", tasks_json)
 
 ---
 
-## 7. Big Project Part 4 – Save & Load To-Do List App Data
+## 8. Big Project Part 4 – Save & Load To-Do List App Data
 Let’s upgrade our To-Do List App to store tasks permanently in a file.
+
+> 💡 *Note: In Session Three, we will build a Persistent Student Management System that saves records using JSON and CSV files!*
 
 ### Step 1: Save tasks to a file
 ```
@@ -212,18 +247,14 @@ while True:
 
 ---
 
-## ✅ Summary
+## 9. Summary
 
 - `open("file.txt", "mode")` → Open a file with read/write/append mode.
-
 - `.write()` → Save text into a file.
-
 - `.read()` / `.readline()` / `.readlines()` → Read data.
-
 - `with open(...)` → Safest way to handle files.
-
+- Relative vs Absolute file paths help organize files across directories.
 - We can store structured data like lists using simple text format.
-
 - Our To-Do List App now saves and loads tasks from a file.
 
 ---

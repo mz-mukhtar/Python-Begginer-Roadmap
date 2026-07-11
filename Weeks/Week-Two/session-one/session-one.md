@@ -112,7 +112,22 @@ for i in range(10):
 
 ---
 
-## 🔐 5. Login System Using a Loop
+## 📦 5. Preview: Looping Through Collections
+
+In addition to looping through number ranges with `range()`, `for` loops can also step through items inside a collection of values! Here is a quick preview:
+
+```python
+student_names = ["Abel", "Sara", "Miki"]
+
+for student_name in student_names:
+    print(student_name)
+```
+
+*(Note: We will study lists and tuples in detail during Session Two!)*
+
+---
+
+## 🔐 6. Login System Using a Loop
 
 Let’s revisit the login system — now with a loop.
 ```

@@ -1,7 +1,7 @@
-# Session 7: Working with Strings in Python
+# 📘 Week 4 – Session 1: Strings in Depth
 
 In this session, we will dive deeper into **string manipulation**, which is one of the most important skills in Python programming. Strings are everywhere: user input, file names, messages, data from the web, etc.  
-By the end of this session, you’ll be able to clean, transform, and analyze text effectively.
+By the end of this session, you’ll be able to clean, transform, format, and validate text effectively.
 
 ---
 
@@ -97,26 +97,55 @@ print(word[-3:])   # Output: hon (last 3 characters)
 
 ## 3. Formatting with f-Strings
 
-f-strings allow you to embed variables directly inside strings (introduced in Python 3.6+).
+f-strings allow you to embed variables directly inside strings cleanly and readable.
+
+### Why f-Strings Are Better Than String Concatenation (`+`)
+Without f-strings, combining text and numbers requires converting numbers using `str()` and adding spaces carefully:
+```python
+name = "Sara"
+score = 95
+# Clunky concatenation (+)
+message = "Student " + name + " scored " + str(score) + " points."
 ```
-name = "Mahi"
-age = 22
-print(f"My name is {name} and I am {age} years old.")
-# Output: My name is Mahi and I am 21 years old.
+
+With **f-strings** (prefix the string with `f`), you simply put curly braces `{}` around variables:
+```python
+message = f"Student {name} scored {score} points."
+print(message)
 ```
-You can also do calculations inside f-strings:
-```
+
+You can even do calculations inside f-strings:
+```python
 a = 5
 b = 3
 print(f"{a} + {b} = {a + b}")
 # Output: 5 + 3 = 8
 ```
-✅ Practice: Write a program that asks for the user’s name and age, then prints:
-`Hello [name], next year you will be [age+1] years old.`
 
 ---
 
-## 4. Mini-Project: Text Analysis
+## 4. Input Validation: `isdigit()`, `isalpha()`, `isalnum()`
+
+When building programs that interact with users, you should check text before converting or processing it:
+
+- **`.isdigit()`**: Returns `True` if all characters in the string are digits (`0-9`).
+- **`.isalpha()`**: Returns `True` if all characters are alphabetic letters (`a-z`, `A-Z`).
+- **`.isalnum()`**: Returns `True` if all characters are letters or numbers (alphanumeric).
+
+### Example: Safe Age Input
+```python
+age_input = input("Enter your age: ")
+
+if age_input.isdigit():
+    age = int(age_input)
+    print(f"Next year, you will be {age + 1}!")
+else:
+    print("❌ Error: Please enter numbers only.")
+```
+
+---
+
+## 5. Mini-Project: Text Analysis
 
 
 We’ll build a small Text Analyzer that does the following:
@@ -165,16 +194,13 @@ text_analyzer()
 
 ---
 
-## 5. Summary
+## 6. Summary
 
-- lower() and upper() change string case.
-
-- split() and join() are used for breaking apart and combining text.
-
+- `lower()` and `upper()` change string case.
+- `split()` and `join()` break apart and combine text.
 - Indexing and slicing help extract parts of strings.
-
-- f-strings make formatting simple and powerful.
-
+- **f-strings** make formatting simple, clean, and powerful.
+- **`.isdigit()`**, **`.isalpha()`**, and **`.isalnum()`** validate user input before processing.
 - Mini-project: we built a text analyzer to count words and find palindromes.
 
 ---

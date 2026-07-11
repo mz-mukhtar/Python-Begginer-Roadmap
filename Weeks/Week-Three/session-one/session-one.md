@@ -17,7 +17,19 @@ By the end of this session, you will:
 
 ---
 
-## 🧩 1. What is a Function?
+---
+
+## 💡 1. Why Functions Are Essential
+
+Before writing any function code, let's understand why functions are the foundation of good software engineering:
+- **Organize programs into logical building blocks**: Large projects become manageable when broken into smaller, named pieces.
+- **Reduce repetitive code**: Write logic once and execute it anywhere.
+- **Make code easier to test and debug**: When an error occurs, you can fix it inside one function rather than searching dozens of repetitive lines.
+- **Allow reuse across multiple parts of a program**: Functions can be called from different screens, menus, or features.
+
+---
+
+## 🧩 2. What is a Function?
 
 A function is a named block of code that performs a specific task.
 
@@ -28,75 +40,84 @@ def greet():
     print("Hello!")
 ```
 ➕ Calling the function:
-```greet()```
-
----
-
-## 🧪 2. Why Use Functions?
-
-Without functions:
+```python
+greet()
 ```
-print("Welcome")
-print("Welcome")
-```
-With a function:
-```
-def welcome():
-    print("Welcome")
-
-welcome()
-welcome()
-```
-✅ Less repetition
-✅ Easier debugging
-✅ Clearer code structure
 
 ---
 
 ## ✍️ 3. Defining and Calling Functions
 🧑‍💻 Syntax:
-```
+```python
 def function_name():
     # block of code
     print("I am inside a function.")
 ```
 To run the code inside:
-```
+```python
 function_name()
 ```
 
 ---
 
 ## 📦 4. Parameters and Arguments
-🎯 A function can take input values:
-```
-def greet_user(name):
-    print("Hello", name)
 
-greet_user("Mahlet")
-greet_user("Alemayehu")
-```
-You can pass multiple parameters:
-```
-def add(a, b):
-    print("Sum =", a + b)
+A function can accept input values called **parameters** (when defining) or **arguments** (when calling):
 
-add(3, 5)
+### 1️⃣ Positional Arguments
+Arguments are matched by their order:
+```python
+def greet_student(name, age):
+    print("Hello", name, "- age:", age)
+
+greet_student("Abebe", 20)
+```
+✅ Output:
+```text
+Hello Abebe - age: 20
+```
+
+### 2️⃣ Keyword Arguments
+You can specify parameter names explicitly when calling:
+```python
+greet_student(age=20, name="Abebe")
+```
+
+### 3️⃣ Default Parameters
+You can give a parameter a default value if the caller leaves it empty:
+```python
+def welcome_user(name="Student"):
+    print("Welcome,", name)
+
+welcome_user("Sara")    # Welcome, Sara
+welcome_user()          # Welcome, Student
 ```
 
 ---
 
-## 🎯 5. Return Values
+## 🎯 5. Return Values and `None`
 
-Functions can also return a result:
-```
-def square(x):
+Functions can return a computed result back to the caller using `return`:
+
+```python
+def calculate_square(x):
     return x * x
 
-result = square(4)
+result = calculate_square(4)
 print(result)  # 16
 ```
- Use `return` when you want to send a result back to the caller.
+
+### What Happens Without `return`?
+If a function finishes without encountering a `return` statement, Python automatically returns **`None`**. 
+In Python, **`None`** represents the absence of a value (nothing):
+
+```python
+def display_greeting(name):
+    print("Hello,", name)
+
+output = display_greeting("Mahi")
+print("Returned value:", output)  # Returned value: None
+```
 
 ---
 

@@ -1,243 +1,179 @@
-# Session 6: Mastering Dictionaries in Python
+# 📘 Week 3 – Session 2: Return Values, Scope, and Function Design
 
-In this session, we’ll dive deeper into **dictionaries**, one of Python’s most powerful and flexible data structures. By the end of this lesson, you’ll not only know how to use dictionaries but also how to **store structured data** effectively for real-world applications.
+Welcome to **Week 3 – Session 2**! 🎉  
+
+In Session 1, you learned how to define and call basic functions. Now we will take the next step toward professional Python craftsmanship: understanding **variable scope**, writing **clean docstrings**, and **organizing multi-function programs**.
 
 ---
 
-## 1. Introduction to Dictionaries
+## ✅ Learning Objectives
 
-A **dictionary** in Python is a collection of **key-value pairs**. Unlike lists (which are ordered collections accessed by index), dictionaries store data in pairs where:
-- A **key** is a unique identifier.
-- A **value** is the data associated with the key.
+By the end of this session, you will be able to:
+- Explain the difference between **local scope** and **global scope**
+- Avoid relying on global variables by passing arguments and returning values
+- Write informative **docstrings** (`"""..."""`) for your functions
+- Apply best practices for clean function naming and design
+- Structure a multi-function program cleanly using a main controller flow
 
-📌 **Syntax:**
+---
+
+## 🌍 1. Local Versus Global Scope
+
+**Scope** refers to the area of your Python program where a variable exists and can be accessed.
+
+### 1️⃣ Local Scope
+When you create a variable inside a function, it is **local** to that function. It is created when the function runs and forgotten as soon as the function finishes:
+
 ```python
-my_dict = {
-    "key1": "value1",
-    "key2": "value2",
-}
+def create_welcome_message():
+    message = "Hello from inside the function!"
+    print(message)
+
+create_welcome_message()
+# print(message)  # ❌ Error: NameError - 'message' is not defined outside!
 ```
 
-Example:
-```
-student = {
-    "name": "Mahi",
-    "age": 21,
-    "major": "Electrical Engineer"
-}
+### 2️⃣ Global Scope
+Variables created outside of all functions belong to the **global scope**. They can be read from anywhere in the file:
 
-print(student["name"])  # Output: Mahi
+```python
+school_name = "Addis Ababa Institute of Technology"
+
+def show_school():
+    print("Welcome to", school_name)
+
+show_school()
 ```
 
-Key Points:
+### 💡 Best Practice for Beginners
+While it is possible to modify global variables using the `global` keyword, **relying heavily on global variables makes programs hard to debug and test**.
 
-  - Keys must be unique.
+Instead, always prefer:
+- **Passing data in** using **parameters**
+- **Sending results out** using **`return`**
 
-  - Keys can be of type: string, number, or tuple (immutable types).
+#### Bad Pattern (Relying on globals):
+```python
+total = 0
 
-  - Values can be of any data type (string, int, list, another dict, etc.).
+def add_ten():
+    global total
+    total += 10
+```
 
----
+#### Clean & Reusable Pattern (Parameters and Return):
+```python
+def add_ten(current_total):
+    return current_total + 10
 
-## 2. Adding, Updating, and Deleting Items in a Dictionary
-Adding a new key-value pair:
-```
-student["university"] = "AAiT"
-print(student)
-```
-Updating a value:
-```
-student["age"] = 22
-print(student)
-```
-Deleting a key-value pair:
-```
-del student["major"]
-print(student)
-```
-Using `.pop()`:
-```
-removed = student.pop("age")
-print("Removed:", removed)
-print(student)
+my_total = 0
+my_total = add_ten(my_total)
 ```
 
 ---
 
-## 3. Looping Through a Dictionary
+## 📝 2. Docstrings and Good Function Design
 
-Dictionaries are iterable. You can loop through keys, values, or items (key-value pairs).
-Loop through keys:
+Professional code should explain itself clearly.
+
+### 1️⃣ Writing Docstrings (`"""..."""`)
+A **docstring** (documentation string) is a multi-line string placed immediately below the `def` line to explain what the function does:
+
+```python
+def calculate_area(length, width):
+    """
+    Calculates and returns the area of a rectangle.
+    """
+    return length * width
 ```
-for key in student:
-    print(key)
-```
-Loop through values:
-```
-for value in student.values():
-    print(value)
-```
-Loop through key-value pairs:
-```
-for key, value in student.items():
-    print(key, ":", value)
-```
+
+When someone uses your function or inspects it in an editor, Python shows this docstring automatically!
+
+### 2️⃣ Best Practices for Function Design
+- **Do one clear job**: A function should perform a single, well-defined task.
+- **Use descriptive names**: Name functions with action verbs that explain their purpose (`calculate_total()`, `format_student_name()`) rather than vague names (`do_it()`, `stuff()`).
+- **Keep functions short**: If a function becomes longer than 25–30 lines, consider breaking it into smaller helper functions.
 
 ---
 
-## 4. Dictionary Methods You Should Know
+## 🏗️ 3. Organizing Multi-Function Programs
 
-- `dict.keys()` → returns all keys
-- `dict.values()` → returns all values
-- `dict.items()` → returns all key-value pairs
-- `dict.get(key, default)` → returns value for key, or default if not found
-- `dict.update({...})` → updates dictionary with new values
+Let's see how breaking a task into 3 clear functions makes our program organized and readable.
 
-Example:
+Imagine we want to collect a student's score, determine their grade letter (`A`, `B`, `C`, `F`), and display the final report.
+
+### Step 1: Input Function (`get_student_score()`)
+```python
+def get_student_score():
+    """Prompts the user to enter a valid exam score."""
+    score = float(input("Enter exam score (0-100): "))
+    return score
 ```
-student = {"name": "Mahi", "age": 21}
 
-print(student.get("major", "Not Specified"))  
-# Output: Not Specified
-
-student.update({"major": "Cybersecurity"})
-print(student)
+### Step 2: Processing Function (`calculate_grade()`)
+```python
+def calculate_grade(score):
+    """Returns the letter grade corresponding to a numeric score."""
+    if score >= 85:
+        return "A"
+    elif score >= 70:
+        return "B"
+    elif score >= 50:
+        return "C"
+    else:
+        return "F"
 ```
+
+### Step 3: Display Function (`display_result()`)
+```python
+def display_result(score, grade):
+    """Displays the student's formatted grade report."""
+    print("\n--- Student Grade Report ---")
+    print("Score Entered:", score)
+    print("Letter Grade :", grade)
+    print("----------------------------")
+```
+
+### Step 4: Connecting the Flow
+We coordinate the flow by calling each function sequentially:
+
+```python
+# Main Program Flow
+student_score = get_student_score()
+student_grade = calculate_grade(student_score)
+display_result(student_score, student_grade)
+```
+
+✅ Sample Output:
+```text
+Enter exam score (0-100): 88
+
+--- Student Grade Report ---
+Score Entered: 88.0
+Letter Grade : A
+----------------------------
+```
+
+> 💡 *Note: In Session Three, we will take Program Decomposition even further and organize our controller logic inside a clean `main()` function!*
 
 ---
 
-## 5. Nested Dictionaries
+## 🧪 4. Practice Exercises
 
-A nested dictionary means a dictionary inside another dictionary. This is useful for representing structured or hierarchical data.
-Example: Storing students’ information
-```
-students = {
-    "student1": {"name": "Mahi", "age": 22, "major": "EE"},
-    "student2": {"name": "Sara", "age": 22, "major": "IT"},
-    "student3": {"name": "Jon", "age": 20, "major": "EE"}
-}
+### Task 1: Area Calculator with Docstring
+Write a function `calculate_triangle_area(base, height)` that includes a clear docstring and returns `(base * height) / 2`.
 
-# Access nested values:
-print(students["student1"]["name"])  # Output: Mahi
-
-# Loop through nested dictionaries:
-for student_id, info in students.items():
-    print(student_id, "->", info["name"], info["major"])
-```
+### Task 2: Multi-Function Temperature Converter
+Write two separate functions:
+1. `celsius_to_fahrenheit(c)` that returns `(c * 9/5) + 32`
+2. `display_temperature(c)` that calls `celsius_to_fahrenheit(c)` and prints both temperatures clearly.
 
 ---
 
-## 6. Use Cases of Dictionaries
-
-  1. Storing configuration settings (like app preferences).
-
-  2. Mapping IDs to user data (student ID → student details).
-
-  3. Counting frequency of items in text (word counter).
-
-  4. Representing JSON data (API responses are basically dictionaries in Python).
-
----
-
-## 7. Big Project Part 3: Store Structured Data Using Dictionaries
-
-Now, let’s build on our To-Do List Manager Project.
-So far:
-
-- Part 1: We used variables/lists.
-
-- Part 2: We introduced functions.
-
-Now in Part 3, we’ll use dictionaries to make the system structured and scalable.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 🏁 5. Session Summary
+
+- **Local scope** protects variables inside functions; **global scope** is outside all functions.
+- Pass values in via **parameters** and send them out via **`return`**.
+- Write clear **docstrings** (`"""..."""`) to document function purpose.
+- Name functions descriptively (`calculate_grade()` instead of `calc()`).
+- Decompose programs into clear input, processing, and display functions!

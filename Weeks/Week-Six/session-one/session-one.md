@@ -87,40 +87,67 @@ class Student:
 
 🔍 **Breakdown:**
 - `__init__()` runs **automatically** whenever you create a new object.
-- **`self`** refers to the specific object being created right now.
 - `self.name = name` stores the passed `name` argument inside the object's personal `name` attribute.
+
+### Why Do We Need `self`?
+**`self`** represents the specific object instance being manipulated. When you have two objects (`student1` and `student2`), passing `self` automatically tells Python whether to access or modify `student1`'s data or `student2`'s data!
 
 ---
 
-## 👥 5. Creating Multiple Objects
+## 5. Class Variables Versus Instance Variables
 
-Because a class is a blueprint, we can use it to create as many unique objects as we want!
+In Python classes, variables can be defined in two places:
 
+### 1️⃣ Instance Variables (Unique to Each Object)
+Defined inside `__init__()` using `self.variable_name`. Each object gets its own separate copy:
+```python
+class Student:
+    def __init__(self, name):
+        self.name = name  # Instance variable (unique for each student)
+```
+
+### 2️⃣ Class Variables (Shared Across All Objects)
+Defined directly inside the class body outside `__init__()`. All objects share the same value:
+```python
+class Student:
+    school_name = "Addis Ababa University"  # Class variable (shared across all students)
+
+    def __init__(self, name):
+        self.name = name
+
+student1 = Student("Abel")
+student2 = Student("Sara")
+
+print(student1.school_name)  # Addis Ababa University
+print(student2.school_name)  # Addis Ababa University
+```
+
+---
+
+## 6. String Representation (`__str__()`)
+
+If you print an object directly (`print(student1)`), Python displays an unreadable memory address:
+```text
+<__main__.Student object at 0x7f8b1c2a3e10>
+```
+
+To make objects print clean, human-readable text, define the built-in **`__str__()`** method:
 ```python
 class Student:
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
-# Creating two distinct student objects
-student_one = Student("Abel", 20)
-student_two = Student("Sara", 19)
+    def __str__(self):
+        return f"Student({self.name}, {self.age} yrs)"
 
-print(f"{student_one.name} is {student_one.age} years old.")
-print(f"{student_two.name} is {student_two.age} years old.")
+student1 = Student("Abel", 20)
+print(student1)  # Prints: Student(Abel, 20 yrs)
 ```
-
-✅ Output:
-```text
-Abel is 20 years old.
-Sara is 19 years old.
-```
-
-Notice that `student_one` and `student_two` each keep their own separate `name` and `age`!
 
 ---
 
-## 🏃 6. Adding Methods
+## 7. Adding Methods
 
 Attributes store data, but **Methods** let objects perform actions. A method is simply a function defined inside a class. Remember to always include `self` as the first parameter!
 
@@ -150,7 +177,7 @@ student_two.display_information()
 
 ---
 
-## 🧑‍💻 7. OOP Example Project: Simple Class-Based Student Model
+## 🧑‍💻 8. OOP Example Project: Simple Class-Based Student Model
 
 Let’s build a clean, beginner-friendly class model for our Student Management System:
 
@@ -179,7 +206,7 @@ if __name__ == "__main__":
 
 ---
 
-## 🔄 8. Convert a Function-Based Program Into a Class
+## 🔄 9. Convert a Function-Based Program Into a Class
 
 Let’s compare how we handled data before OOP versus after OOP.
 
@@ -217,7 +244,7 @@ Classes bundle the data (`name`, `age`) and behavior (`display_information`) tog
 
 ---
 
-## 🧪 9. Practice Exercises
+## 🧪 10. Practice Exercises
 
 Try writing these classes on your own:
 
@@ -238,10 +265,12 @@ Try writing these classes on your own:
 
 ---
 
-## ✅ 10. Session Summary
+## ✅ 11. Session Summary
 
 - **Object-Oriented Programming (OOP)** models real-world entities by bundling data and behavior.
 - A **Class** (`class`) is a blueprint; an **Object** is an instance created from that blueprint.
 - The **`__init__()`** constructor runs automatically when creating an object.
 - **`self`** refers to the specific object instance being manipulated.
+- **Instance Variables** are unique to each object (`self.name`); **Class Variables** are shared across all objects.
+- Implementing **`__str__()`** formats objects as clean, human-readable strings.
 - **Attributes** store data (`self.name`), while **Methods** define object actions (`def display_information(self):`).
