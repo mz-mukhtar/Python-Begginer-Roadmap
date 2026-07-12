@@ -1,6 +1,7 @@
 """
 Entrypoint for Professionally Organized Student Management System
 Week Seven — Python Beginner Roadmap
+Author: Mahi Zeki (EthioNext / Harar Dev Center / Cyber Vanguard)
 """
 
 from utilities.file_manager import StorageRepository

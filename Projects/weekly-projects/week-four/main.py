@@ -1,7 +1,7 @@
 """
 Project: Persistent Student Management System
 Week Four — Python Beginner Roadmap
-Author: Mahi Zeki (EthioNext / Cyber Vanguard)
+Author: Mahi Zeki (EthioNext / Harar Dev Center / Cyber Vanguard)
 
 Description:
 Adds JSON and CSV persistence using pathlib.

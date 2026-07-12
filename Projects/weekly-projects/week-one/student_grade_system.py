@@ -1,7 +1,7 @@
 """
 Project: Smart Student Grade System
 Week One — Python Beginner Roadmap
-Author: Mahi Zeki (EthioNext / Cyber Vanguard)
+Author: Mahi Zeki (EthioNext / Harar Dev Center / Cyber Vanguard)
 
 Description:
 An interactive grade report application built using strictly Week One concepts:

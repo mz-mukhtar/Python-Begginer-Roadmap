@@ -383,7 +383,7 @@ This repository is open-source educational material licensed under the **[MIT Li
 
 ## 23. Author & Maintainer
 
-Created and maintained by **[Mahi Zeki](mailto:mahizmukhtar@gmail.com)**, co-founder of **EthioNext** and educator at **Cyber Vanguard** Club (AAiT).
+Created and maintained by **[Mahi Zeki](mailto:mahizmukhtar@gmail.com)**, co-founder of **EthioNext** and **Harar Dev Center**, and educator at **Cyber Vanguard** Club (AAiT).
 
 > *“Empowering students to learn by doing — one project at a time.”*  
 > — Mahi Zeki

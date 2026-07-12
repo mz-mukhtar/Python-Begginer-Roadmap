@@ -1,7 +1,7 @@
 """
 Project: Reliable Student Management System
 Week Five — Python Beginner Roadmap
-Author: Mahi Zeki (EthioNext / Cyber Vanguard)
+Author: Mahi Zeki (EthioNext / Harar Dev Center / Cyber Vanguard)
 """
 
 from student_tools import safe_load_json, safe_save_json, safe_export_csv

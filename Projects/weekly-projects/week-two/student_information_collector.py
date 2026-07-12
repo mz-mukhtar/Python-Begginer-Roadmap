@@ -1,7 +1,7 @@
 """
 Project: Student Information Collector
 Week Two — Python Beginner Roadmap
-Author: Mahi Zeki (EthioNext / Cyber Vanguard)
+Author: Mahi Zeki (EthioNext / Harar Dev Center / Cyber Vanguard)
 
 Description:
 An interactive student registry utilizing loops, lists, dictionaries, and sets.

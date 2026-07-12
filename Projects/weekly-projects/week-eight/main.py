@@ -1,6 +1,7 @@
 """
 Capstone Entrypoint — Tested Student Management System
 Week Eight — Python Beginner Roadmap
+Author: Mahi Zeki (EthioNext / Harar Dev Center / Cyber Vanguard)
 """
 
 from utilities.file_manager import StorageRepository

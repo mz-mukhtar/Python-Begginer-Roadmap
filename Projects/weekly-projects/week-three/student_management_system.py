@@ -1,7 +1,7 @@
 """
 Project: Function-Based Student Management System
 Week Three — Python Beginner Roadmap
-Author: Mahi Zeki (EthioNext / Cyber Vanguard)
+Author: Mahi Zeki (EthioNext / Harar Dev Center / Cyber Vanguard)
 
 Description:
 A modular Student Management System structured with single-responsibility functions,

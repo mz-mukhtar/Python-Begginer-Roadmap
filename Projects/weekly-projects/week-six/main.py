@@ -1,7 +1,7 @@
 """
 Project: Object-Oriented Student Management System
 Week Six — Python Beginner Roadmap
-Author: Mahi Zeki (EthioNext / Cyber Vanguard)
+Author: Mahi Zeki (EthioNext / Harar Dev Center / Cyber Vanguard)
 
 Description:
 Demonstrates Object-Oriented Programming (OOP) with User -> Student inheritance
